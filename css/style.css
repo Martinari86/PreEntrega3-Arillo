@@ -1,0 +1,557 @@
+/* Estilos de Fuente */
+/* Logo font-family: 'Lato', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900');
+/* Textos font-family: 'Vina Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans');
+
+/* Estilo Inicial */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*Estilo INDEX*/
+
+#mainIndex{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 20% repeat(2,1fr);
+    grid-template-areas: 
+    "articuloIndex1 articuloIndex1"
+    "articuloIndex2 articuloIndex2"
+    "articuloIndex3 articuloIndex3";
+    background-color: red;
+    gap: 20px
+}
+
+.mainIndex__articuloIndex1{
+    grid-area: articuloIndex1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainIndex__articuloIndex2{
+    grid-area: articuloIndex2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mainIndex__articuloIndex3{
+    grid-area: articuloIndex3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mainIndex-articuloIndex1__textoBienvenida{
+    font-size: 100px;
+    width: auto;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+
+}
+
+.mainIndex-articuloIndex2__imagenPortada{
+    width: auto;
+    height: auto;
+    border-radius: 75%;
+}
+
+.mainIndex-articuloIndex2__textoPortada{
+    font-size: 90px;
+    font-family: 'Vina Sans', sans-serif;
+    color:white;
+    text-decoration:none;
+    
+}
+
+.mainIndex-articuloIndex3__textoPedidosYa{
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+    color:white
+}
+
+/*Estilo PRINCIPAL*/
+
+#cuerpoPrincipal{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    background-color: red;
+    gap: 20px
+
+}
+
+#mainPrincipal{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainPrincipal__articulo1{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mainPrincipal__articulo2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+      
+}
+
+.mainPrincipal__articulo3{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: column;   
+    
+}
+
+.mainPrincipal-articulo1__texto{
+    font-size: 90px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color:white;
+    
+}
+
+
+.mainPrincipal-articulo2__imagen1,
+.mainPrincipal-articulo2__imagen2,
+.mainPrincipal-articulo2__imagen3{
+    width: 25%;
+    height: auto;
+    border-radius: 70px;
+    padding:20px;
+  
+}
+
+.mainPrincipal-articulo3__div{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+.mainPrincipal-articulo3__texto{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color:white;
+  
+    
+}
+
+.mainPrincipal-articulo3__imagen1,
+.mainPrincipal-articulo3__imagen2,
+.mainPrincipal-articulo3__imagen3{
+    width: 50%;
+    height: auto;
+    border-radius: 25px;
+    padding: 10px;
+    
+}
+
+.carousel-inner{
+    margin: 0 auto;
+    
+}
+
+/* Estilo Hamburguesas */
+
+#cuerpoHamburguesas{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    background-color: red;
+    justify-content:space-evenly;
+}
+
+#mainHamburguesas{
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    
+}
+
+.mainHamburguesas__articulo2{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+
+}
+
+.mainHamburguesas__articulo1{
+    text-align: center;
+    align-items: center;
+    color:white;
+    margin: 50px;
+}
+
+.mainHamburguesas-articulo1__texto{
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+    color:white;
+}
+
+.mainHamburguesas-pruducto1__div1,
+.mainHamburguesas-pruducto2__div1,
+.mainHamburguesas-pruducto3__div1,
+.mainHamburguesas-pruducto4__div1{
+    display: flex;
+    align-items: center;
+    flex-direction: row; 
+}
+
+.mainHamburguesas-pruducto1-div__imagen,
+.mainHamburguesas-pruducto2-div__imagen,
+.mainHamburguesas-pruducto3-div__imagen,
+.mainHamburguesas-pruducto4-div__imagen{
+    width: 50%;
+    height: auto;
+    border-radius: 25px;
+    padding: 10px; 
+}
+
+.mainHamburguesas-pruducto1-divTexto__texto1,
+.mainHamburguesas-pruducto2-divTexto__texto1,
+.mainHamburguesas-pruducto3-divTexto__texto1,
+.mainHamburguesas-pruducto4-divTexto__texto1{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color:white;
+}
+
+.mainHamburguesas-pruducto1-divTexto__texto2,
+.mainHamburguesas-pruducto2-divTexto__texto2,
+.mainHamburguesas-pruducto3-divTexto__texto2,
+.mainHamburguesas-pruducto4-divTexto__texto2{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color:white;
+    padding: 25px;
+}
+
+/* Estilo Nosotros */
+
+#cuerpoNosotros{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    background-color: red;
+    justify-content:space-evenly;
+}
+
+#mainNosotros{
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    
+}
+
+.mainNosotros__articulo2{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+
+}
+
+.mainNosotros__articulo1{
+    text-align: center;
+    align-items: center;
+    color:white;
+    margin: 50px;
+}
+
+.mainNosotros-articulo1__texto1{
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    color:white;
+}
+
+.mainNosotros-articulo1__texto2{
+    font-size: 100px;
+    font-family: 'Lato', sans-serif;
+    color:white;
+    margin-top: 100px;
+}
+
+.mainNosotros-articulo2__CV1,
+.mainNosotros-articulo2__CV2,
+.mainNosotros-articulo2__CV3{
+    display: flex;
+    align-items: center;
+    flex-direction: row; 
+}
+
+.mainNosotros-articulo2-CV1__imagen,
+.mainNosotros-articulo2-CV2__imagen,
+.mainNosotros-articulo2-CV3__imagen{
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    padding: 10px; 
+}
+
+.mainNosotros-articulo2-CV1__texto,
+.mainNosotros-articulo2-CV2__texto,
+.mainNosotros-articulo2-CV3__texto{
+    font-size: 35px;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    color:white;
+}
+
+.mainHamburguesas-pruducto1-divTexto__texto2,
+.mainHamburguesas-pruducto2-divTexto__texto2,
+.mainHamburguesas-pruducto3-divTexto__texto2,
+.mainHamburguesas-pruducto4-divTexto__texto2{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color:white;
+    padding: 25px;
+}
+
+/* Estilo SUCURSALES */
+
+#cuerpoSucursales{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    background-color: red;
+    justify-content:space-evenly;
+}
+
+#mainSucursales{
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    
+}
+
+.mainSucursales__articulo1{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+
+}
+
+.mainSucursales-articulo1__texto{
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    color:white;
+}
+
+.mainSucursales__articulo2{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.mainSucursales-articulo2__ubicacion1,
+.mainSucursales-articulo2__ubicacion2,
+.mainSucursales-articulo2__ubicacion3{
+    display: flex;
+    align-items: center;
+    flex-direction: row; 
+}
+
+.mainSucursales-articulo2-ubicacion1__maps,
+.mainSucursales-articulo2-ubicacion2__maps{
+    width: 500px;
+    height: 500px;
+    border-radius: 25px;
+    padding: 10px; 
+}
+
+.mainSucursales-articulo2-ubicacion1__texto,
+.mainSucursales-articulo2-ubicacion2__texto{
+    font-size: 35px;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    color:white;
+}
+
+/* Estilo COMENTARIOS */
+
+#cuerpoContacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    background-color: red;
+    justify-content:space-evenly;
+}
+
+#mainContacto{
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    
+}
+
+.mainContacto__articulo1{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+
+}
+
+.mainContacto-articulo1__texto{
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    color:white;
+    margin: 50px
+}
+
+.mainContacto__articulo1{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.mainContacto-articulo2__formulario{
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column; 
+    justify-content:space-evenly;
+}
+
+.mainContacto-articulo2-formulario__linea1,
+.mainContacto-articulo2-formulario__linea2,
+.mainContacto-articulo2-formulario__linea3,
+.mainContacto-articulo2-formulario__linea4,
+.mainContacto-articulo2-formulario__linea5{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row; 
+    margin: 10px 
+}
+
+.mainContacto-articulo2-formulario-linea1__etiqueta1,
+.mainContacto-articulo2-formulario-linea1__etiqueta2,
+.mainContacto-articulo2-formulario-linea1__etiqueta3,
+.mainContacto-articulo2-formulario-linea1__etiqueta4,
+.mainContacto-articulo2-formulario-linea1__etiqueta5{
+    width: 250px;
+    height: 50px;
+
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    color:white;
+}
+
+.mainContacto-articulo2-formulario-linea1__input1,
+.mainContacto-articulo2-formulario-linea1__input2,
+.mainContacto-articulo2-formulario-linea1__input3,
+.mainContacto-articulo2-formulario-linea1__input4,
+.mainContacto-articulo2-formulario-linea1__input5{
+    width: 500px;
+    height: 50px;
+}
+
+
+/*Estilo HEADER - comun a todas las paginas del Sitio*/
+
+#header{
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    grid-area: header;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    -webkit-box-shadow: 0px 13px 33px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 13px 33px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 13px 33px 0px rgba(0,0,0,0.75);
+
+}
+
+.header__logo{
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+}
+
+.header-menu__navegacion{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-items: center;
+    font-size: 30px;
+}
+
+.header-menu-navegacion__texto{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: white;
+    
+
+}
+
+.header-menu-navegacion__enlace{
+    text-decoration:none;
+}
+
+
+/*Estilo FOOTER - comun a todas las paginas del Sitio*/
+
+#footer{
+    grid-area: footer;
+    background-color: red;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+}
+
+.footer__texto{
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.footer__imagen{
+    width: 150px;
+    height: 100%;
+    
+}

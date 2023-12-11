@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Se setea lang="es" -->
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body id="cuerpoContacto">
+    <!-- Header con logo y menú a la derecha -->
+    <header id="header">
+        <a href="./principal.html"><img class="header__logo" src="../imagenes/memphis1.JPG" title="Home" alt="Home"> </a>
+            <nav class="header__menu">
+                <ul class="header-menu__navegacion">
+                    <a class="header-menu-navegacion__enlace" href="./hamburguesas.html"> <li class="header-menu-navegacion__texto">Hamburguesas</li> </a>
+                    <a class="header-menu-navegacion__enlace" href="./nosotros.html"> <li class="header-menu-navegacion__texto">Nosotros</li> </a>
+                    <a class="header-menu-navegacion__enlace" href="./sucursales.html"> <li class="header-menu-navegacion__texto">Sucursales</li> </a>
+                    <a class="header-menu-navegacion__enlace" href="./contacto.html"> <li class="header-menu-navegacion__texto">Contacto</li> </a>
+                </ul>
+            </nav>
+    </header>
+    
+    <main id="mainContacto">
+        <article class="mainContacto__articulo1">
+            <p class="mainContacto-articulo1__texto">Dudas, Sugerencias o Reclamos ?</p>
+        </article>
+        
+        <article class="mainContacto__articulo2">
+            <!-- Iria Formulario-->
+           <form class="mainContacto-articulo2__formulario">
+                <div class="mainContacto-articulo2-formulario__linea1">
+                    <label class="mainContacto-articulo2-formulario-linea1__etiqueta1"> Nombre </label>
+                    <input class="mainContacto-articulo2-formulario-linea1__input1" type="text">
+                </div>
+                <div class="mainContacto-articulo2-formulario__linea2">
+                    <label class="mainContacto-articulo2-formulario-linea1__etiqueta2"> Apellido </label>
+                    <input class="mainContacto-articulo2-formulario-linea1__input2" type="text">
+                </div>    
+                <div class="mainContacto-articulo2-formulario__linea3">    
+                    <label class="mainContacto-articulo2-formulario-linea1__etiqueta3"> Telefono </label>
+                    <input class="mainContacto-articulo2-formulario-linea1__input3" type="number">
+                </div>    
+                <div class="mainContacto-articulo2-formulario__linea4">    
+                    <label class="mainContacto-articulo2-formulario-linea1__etiqueta4"> Mail </label>
+                    <input class="mainContacto-articulo2-formulario-linea1__input4" type="email">
+                </div>    
+                <div class="mainContacto-articulo2-formulario__linea5">    
+                    <label class="mainContacto-articulo2-formulario-linea1__etiqueta5">Comentarios</label>
+                    <textarea class="mainContacto-articulo2-formulario-linea1__input5" name="Comentarios" id="comentario" cols="30" rows="10"></textarea>
+                </div>
+            </form>   
+        </article>
+    </main>
+
+
+    <footer id="footer">
+        <!-- Contacto y logo de pedidos ya -->
+        <h2 class="footer__texto">Encontranos en Pedidos Ya</h2>
+        <a class="footer__enclace" href="http://www.pedidosya.com.ar" target="_blank"> <img class="footer__imagen" src="../imagenes/pedidosya.jfif" title="icono" alt="icono"> </a>
+        
+    </footer>
+
+</body>
+</html>
+
+
