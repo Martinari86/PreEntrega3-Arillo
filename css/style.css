@@ -16,12 +16,12 @@
 
 #mainIndex{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: 20% repeat(2,1fr);
     grid-template-areas: 
-    "articuloIndex1 articuloIndex1"
-    "articuloIndex2 articuloIndex2"
-    "articuloIndex3 articuloIndex3";
+    "articuloIndex1"
+    "articuloIndex2"
+    "articuloIndex3";
     background-color: red;
     gap: 20px
 }
@@ -37,22 +37,23 @@
     grid-area: articuloIndex2;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .mainIndex__articuloIndex3{
     grid-area: articuloIndex3;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content:space-around;
 }
 
 .mainIndex-articuloIndex1__textoBienvenida{
-    font-size: 100px;
+    font-size: 90px;
     width: auto;
     color: white;
     font-family: 'Lato', sans-serif;
     text-align: center;
+    text-shadow: 4px 2px 9px black;
 
 }
 
@@ -67,13 +68,21 @@
     font-family: 'Vina Sans', sans-serif;
     color:white;
     text-decoration:none;
+    margin: 50px;
+    text-shadow: 4px 2px 9px black;
     
 }
 
 .mainIndex-articuloIndex3__textoPedidosYa{
     font-size: 50px;
     font-family: 'Lato', sans-serif;
-    color:white
+    color:white;
+    text-shadow: 4px 2px 9px black;
+}
+
+.mainIndex-articuloIndex3__imagenPedidosYa{
+    width: 300px;
+    height: auto;
 }
 
 /*Estilo PRINCIPAL*/
@@ -120,10 +129,11 @@
 }
 
 .mainPrincipal-articulo1__texto{
-    font-size: 90px;
+    font-size: 550%;
     text-align: center;
     font-family: 'Lato', sans-serif;
     color:white;
+    text-shadow: 4px 2px 9px black;
     
 }
 
@@ -150,6 +160,7 @@
     text-align: center;
     font-family: 'Lato', sans-serif;
     color:white;
+    text-shadow: 4px 2px 9px black;
   
     
 }
@@ -161,11 +172,6 @@
     height: auto;
     border-radius: 25px;
     padding: 10px;
-    
-}
-
-.carousel-inner{
-    margin: 0 auto;
     
 }
 
@@ -209,6 +215,7 @@
     font-size: 50px;
     font-family: 'Lato', sans-serif;
     color:white;
+    text-shadow: 4px 2px 9px black;
 }
 
 .mainHamburguesas-pruducto1__div1,
@@ -238,6 +245,7 @@
     text-align: center;
     font-family: 'Lato', sans-serif;
     color:white;
+    text-shadow: 4px 2px 9px black;
 }
 
 .mainHamburguesas-pruducto1-divTexto__texto2,
@@ -249,6 +257,7 @@
     font-family: 'Lato', sans-serif;
     color:white;
     padding: 25px;
+    text-shadow: 4px 2px 9px black;
 }
 
 /* Estilo Nosotros */
@@ -291,6 +300,7 @@
     font-size: 40px;
     font-family: 'Lato', sans-serif;
     color:white;
+    text-shadow: 4px 2px 9px black;
 }
 
 .mainNosotros-articulo1__texto2{
@@ -298,6 +308,7 @@
     font-family: 'Lato', sans-serif;
     color:white;
     margin-top: 100px;
+    text-shadow: 4px 2px 9px black;
 }
 
 .mainNosotros-articulo2__CV1,
@@ -324,6 +335,7 @@
     text-align: left;
     font-family: 'Lato', sans-serif;
     color:white;
+    text-shadow: 4px 2px 9px black;
 }
 
 .mainHamburguesas-pruducto1-divTexto__texto2,
@@ -335,6 +347,7 @@
     font-family: 'Lato', sans-serif;
     color:white;
     padding: 25px;
+    text-shadow: 4px 2px 9px black;
 }
 
 /* Estilo SUCURSALES */
@@ -370,6 +383,7 @@
     font-size: 40px;
     font-family: 'Lato', sans-serif;
     color:white;
+    text-shadow: 4px 2px 9px black;
 }
 
 .mainSucursales__articulo2{
@@ -400,6 +414,7 @@
     text-align: left;
     font-family: 'Lato', sans-serif;
     color:white;
+    text-shadow: 4px 2px 9px black;
 }
 
 /* Estilo COMENTARIOS */
@@ -435,7 +450,8 @@
     font-size: 40px;
     font-family: 'Lato', sans-serif;
     color:white;
-    margin: 50px
+    margin: 50px;
+    text-shadow: 4px 2px 9px black;
 }
 
 .mainContacto__articulo1{
@@ -471,12 +487,12 @@
 .mainContacto-articulo2-formulario-linea1__etiqueta5{
     width: 250px;
     height: 50px;
-
     font-size: 25px;
     text-align: center;
     justify-content: center;
     font-family: 'Lato', sans-serif;
     color:white;
+    text-shadow: 4px 2px 9px black;
 }
 
 .mainContacto-articulo2-formulario-linea1__input1,
@@ -505,13 +521,15 @@
 
 }
 
+
 .header__logo{
     width: 80px;
     height: 80px;
     padding: 5px;
 }
 
-.header-menu__navegacion{
+
+ .header-menu__navegacion{
     list-style: none;
     display: flex;
     gap: 15px;
@@ -523,8 +541,6 @@
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     color: white;
-    
-
 }
 
 .header-menu-navegacion__enlace{
@@ -547,6 +563,7 @@
     font-size: 30px;
     font-weight: bold;
     color: white;
+    text-shadow: 4px 2px 9px black;
     
 }
 
@@ -554,4 +571,219 @@
     width: 150px;
     height: 100%;
     
+}
+
+
+/* PSEUDOCLASES */
+/* Index */
+.mainIndex-articuloIndex2__textoPortada:hover {
+    font-size: 100px;
+    text-shadow: 4px 2px 9px black;
+}
+
+.mainIndex-articuloIndex3__imagenPedidosYa:hover,
+.footer__imagen:hover{
+    width: 175px;
+    height: auto;
+    box-shadow: 2px -1px 94px 17px white;
+    -webkit-box-shadow: 2px -1px 94px 17px white;
+    -moz-box-shadow: 2px -1px 94px 17px white;
+}
+
+.nav-link:hover{
+    font-weight: bold !important;
+}
+
+/* MEDIA QUERYS */
+
+/* BreakPoints
+320px           Celulares Verticales
+480px           Celulares Horizontales
+600px           Tablets chicas
+768px/1023px    Tablets grandes
+1024px          Notebooks
+1200px          Monitores
+*/
+
+
+@media (max-width:710px) {
+    /* Media Query para INDEX */
+    .mainIndex__articuloIndex2{
+        flex-direction: column;
+        
+    }
+    
+    .mainIndex__articuloIndex3{
+        flex-direction: column;
+    }
+    
+    .mainIndex-articuloIndex1__textoBienvenida{
+        font-size: 50px;
+        width: auto;
+        color: white;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        text-shadow: 4px 2px 9px black;
+    
+    }
+    
+    .mainIndex-articuloIndex2__imagenPortada{
+        width: 300px;
+        height: auto;
+    }
+    
+    .mainIndex-articuloIndex2__textoPortada{
+        font-size: 40px;      
+    }
+    
+    .mainIndex-articuloIndex3__textoPedidosYa{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .mainIndex-articuloIndex3__imagenPedidosYa{
+        width: 150px;
+        height: auto;
+    }
+    /*Media Query PRINCIPAL*/
+
+    .mainPrincipal__articulo2{
+        align-items: center;
+        flex-direction: column        
+    }
+
+    .mainPrincipal-articulo1__texto{
+        font-size: 40px;
+
+    }
+
+    .mainPrincipal-articulo2__imagen1,
+    .mainPrincipal-articulo2__imagen2,
+    .mainPrincipal-articulo2__imagen3{
+        width: 300px;    
+    }
+
+    .mainPrincipal-articulo3__texto{
+        font-size: 30px;
+        }
+
+    .mainPrincipal-articulo3__imagen1,
+    .mainPrincipal-articulo3__imagen2,
+    .mainPrincipal-articulo3__imagen3{
+        width: 500px;
+    }
+
+    /* Media Query para FOOTER */
+    
+    .footer__texto{
+        font-size: 20px;  
+    }
+    
+    .footer__imagen{
+        width: 100px;
+        height: 100%;
+        
+    }
+
+    
+}
+
+ @media (min-width:711px) and (max-width:1000px){ 
+    /* Media Query para INDEX */
+    .mainIndex__articuloIndex2{
+        flex-direction: row;
+        
+    }
+    
+    .mainIndex__articuloIndex3{
+        flex-direction: column;
+    }
+    
+    .mainIndex-articuloIndex1__textoBienvenida{
+        font-size: 70px;
+        width: auto;
+        color: white;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        text-shadow: 4px 2px 9px black;
+    
+    }
+    
+    .mainIndex-articuloIndex2__imagenPortada{
+        width: 300px;
+        height: auto;
+    }
+    
+    .mainIndex-articuloIndex2__textoPortada{
+        font-size: 40px;      
+    }
+    
+    .mainIndex-articuloIndex3__textoPedidosYa{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .mainIndex-articuloIndex3__imagenPedidosYa{
+        width: 150px;
+        height: auto;
+    }
+        /*Media Query PRINCIPAL*/
+
+    .mainPrincipal__articulo2{
+        align-items: center;
+        flex-direction: column        
+    }
+
+    .mainPrincipal-articulo1__texto{
+        font-size: 50px;
+
+    }
+
+    .mainPrincipal-articulo2__imagen1,
+    .mainPrincipal-articulo2__imagen2,
+    .mainPrincipal-articulo2__imagen3{
+        width: 50%;    
+    }
+
+    .mainPrincipal-articulo3__texto{
+        font-size: 30px;
+        }
+
+    .mainPrincipal-articulo3__imagen1,
+    .mainPrincipal-articulo3__imagen2,
+    .mainPrincipal-articulo3__imagen3{
+        width: 500px;
+    }
+
+
+
+
+}
+
+
+
+/* Modificaciones a estilos de BOOTSTRAP */
+
+.nav-item{
+    font-size: 25px !important;
+    font-weight:lighter;
+    text-shadow: 4px 2px 9px black;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+.navbar-toggler-icon{
+    color: white !important;
+}
+
+.carousel-item{
+    justify-content: center !important;
+}
+.navbar-nav{
+    background-color: red !important;
+}
+.navbar-toggler-icon{
+    color: white !important
 }
