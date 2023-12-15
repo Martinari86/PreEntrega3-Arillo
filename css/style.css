@@ -512,9 +512,6 @@
     height: 100px;
     background-color: red;
     grid-area: header;
-    display: flex;
-    align-items:center;
-    justify-content:space-around;
     -webkit-box-shadow: 0px 13px 33px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 13px 33px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 13px 33px 0px rgba(0,0,0,0.75);
@@ -955,4 +952,6 @@
 
 .navbar-toggler-icon{
     color: white !important
+}
+t
 }
