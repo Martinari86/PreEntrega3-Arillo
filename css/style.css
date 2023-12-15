@@ -212,7 +212,7 @@
 }
 
 .mainHamburguesas-articulo1__texto{
-    font-size: 50px;
+    font-size: 90px;
     font-family: 'Lato', sans-serif;
     color:white;
     text-shadow: 4px 2px 9px black;
@@ -474,10 +474,10 @@
 .mainContacto-articulo2-formulario__linea5{
     display: flex;
     text-align: center;
-    align-items: center;
     align-content: center;
     flex-direction: row; 
-    margin: 10px 
+    margin: 10px; 
+    gap: 10px
 }
 
 .mainContacto-articulo2-formulario-linea1__etiqueta1,
@@ -500,7 +500,7 @@
 .mainContacto-articulo2-formulario-linea1__input3,
 .mainContacto-articulo2-formulario-linea1__input4,
 .mainContacto-articulo2-formulario-linea1__input5{
-    width: 500px;
+    width: 70%;
     height: 50px;
 }
 
@@ -673,10 +673,154 @@
         width: 500px;
     }
 
+    /*Media Query Hamburguesas */
+    
+    .mainHamburguesas__articulo2{
+        flex-direction: column; 
+    }
+    
+    .mainHamburguesas-articulo1__texto{
+        font-size: 40px;
+        font-family: 'Lato', sans-serif;
+        color:white;
+        text-shadow: 4px 2px 9px black;
+    }
+    
+    .mainHamburguesas-pruducto1__div1,
+    .mainHamburguesas-pruducto2__div1,
+    .mainHamburguesas-pruducto3__div1,
+    .mainHamburguesas-pruducto4__div1{
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+    }
+    
+    .mainHamburguesas-pruducto1-div__imagen,
+    .mainHamburguesas-pruducto2-div__imagen,
+    .mainHamburguesas-pruducto3-div__imagen,
+    .mainHamburguesas-pruducto4-div__imagen{
+        width: 300px;
+
+    }
+    
+    .mainHamburguesas-pruducto1-divTexto__texto1,
+    .mainHamburguesas-pruducto2-divTexto__texto1,
+    .mainHamburguesas-pruducto3-divTexto__texto1,
+    .mainHamburguesas-pruducto4-divTexto__texto1{
+        font-size: 30px;
+    }
+    
+    .mainHamburguesas-pruducto1-divTexto__texto2,
+    .mainHamburguesas-pruducto2-divTexto__texto2,
+    .mainHamburguesas-pruducto3-divTexto__texto2,
+    .mainHamburguesas-pruducto4-divTexto__texto2{
+        font-size: 20px;
+    }
+
+    /* Media Query Nosotros */
+
+
+    .mainNosotros__articulo2{
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+
+    }
+
+    .mainNosotros-articulo1__texto1{
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+        color:white;
+        text-shadow: 4px 2px 9px black;
+    }
+
+    .mainNosotros-articulo1__texto2{
+        font-size: 40px;
+        font-family: 'Lato', sans-serif;
+        color:white;
+        margin-top: 100px;
+        text-shadow: 4px 2px 9px black;
+    }
+
+    .mainNosotros-articulo2__CV1,
+    .mainNosotros-articulo2__CV2,
+    .mainNosotros-articulo2__CV3{
+        flex-direction: column; 
+    }
+
+
+    .mainNosotros-articulo2-CV1__texto,
+    .mainNosotros-articulo2-CV2__texto,
+    .mainNosotros-articulo2-CV3__texto{
+        font-size: 15px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Estilo SUCURSALES */
+
+
+    .mainSucursales-articulo1__texto{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .mainSucursales__articulo2{
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+    }
+
+    .mainSucursales-articulo2__ubicacion1,
+    .mainSucursales-articulo2__ubicacion2,
+    .mainSucursales-articulo2__ubicacion3{
+        flex-direction: column; 
+    }
+
+    .mainSucursales-articulo2-ubicacion1__maps,
+    .mainSucursales-articulo2-ubicacion2__maps{
+        width: 80%;
+        height: 80%; 
+    }
+
+    .mainSucursales-articulo2-ubicacion1__texto,
+    .mainSucursales-articulo2-ubicacion2__texto{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    /* Media Query Contacto */
+
+    .mainContacto-articulo2-formulario-linea1__etiqueta1,
+    .mainContacto-articulo2-formulario-linea1__etiqueta2,
+    .mainContacto-articulo2-formulario-linea1__etiqueta3,
+    .mainContacto-articulo2-formulario-linea1__etiqueta4,
+    .mainContacto-articulo2-formulario-linea1__etiqueta5{
+    
+        font-size: 20px;
+        align-content: center;
+
+    }
+
+    .mainContacto-articulo1__texto{
+        font-size: 30px;
+        text-align: center;
+    
+    }
+
+    .mainContacto-articulo2-formulario-linea1__input1,
+    .mainContacto-articulo2-formulario-linea1__input2,
+    .mainContacto-articulo2-formulario-linea1__input3,
+    .mainContacto-articulo2-formulario-linea1__input4,
+    .mainContacto-articulo2-formulario-linea1__input5{
+        width: 70%;
+        height: 30px;
+    }
+
     /* Media Query para FOOTER */
     
     .footer__texto{
-        font-size: 20px;  
+        font-size: 15px;  
     }
     
     .footer__imagen{
@@ -755,9 +899,36 @@
         width: 500px;
     }
 
+    /* Media Query Nosotros */
+
+     .mainNosotros-articulo1__texto1{
+        font-size: 30px;
+       
+    }
+
+    .mainNosotros-articulo1__texto2{
+        font-size: 50px;
+        font-family: 'Lato', sans-serif;
+        color:white;
+        margin-top: 100px;
+        text-shadow: 4px 2px 9px black;
+    }
+
+    .mainNosotros-articulo2__CV1,
+    .mainNosotros-articulo2__CV2,
+    .mainNosotros-articulo2__CV3{
+        flex-direction: column; 
+    }
 
 
-
+    .mainNosotros-articulo2-CV1__texto,
+    .mainNosotros-articulo2-CV2__texto,
+    .mainNosotros-articulo2-CV3__texto{
+        font-size: 25px;
+        text-align: center;
+        padding: 20px;
+    }
+      
 }
 
 
@@ -774,16 +945,14 @@
     color: white !important;
 }
 
-.navbar-toggler-icon{
-    color: white !important;
-}
-
 .carousel-item{
     justify-content: center !important;
 }
-.navbar-nav{
+
+.navbar-nav{ 
     background-color: red !important;
 }
+
 .navbar-toggler-icon{
     color: white !important
 }
