@@ -1,0 +1,73 @@
+/*Estilo INDEX*/
+
+#mainIndex{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% repeat(2,1fr);
+    grid-template-areas: 
+    "articuloIndex1"
+    "articuloIndex2"
+    "articuloIndex3";
+    background-color: red;
+    gap: 20px
+}
+
+.mainIndex__articuloIndex1{
+    grid-area: articuloIndex1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainIndex__articuloIndex2{
+    grid-area: articuloIndex2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mainIndex__articuloIndex3{
+    grid-area: articuloIndex3;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.mainIndex-articuloIndex1__textoBienvenida{
+    font-size: 90px;
+    width: auto;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    text-shadow: 4px 2px 9px black;
+
+}
+
+.mainIndex-articuloIndex2__imagenPortada{
+    width: auto;
+    height: auto;
+    border-radius: 75%;
+}
+
+.mainIndex-articuloIndex2__textoPortada{
+    font-size: 90px;
+    font-family: 'Vina Sans', sans-serif;
+    color:white;
+    text-decoration:none;
+    margin: 50px;
+    text-shadow: 4px 2px 9px black;
+    
+}
+
+.mainIndex-articuloIndex3__textoPedidosYa{
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+    color:white;
+    text-shadow: 4px 2px 9px black;
+}
+
+.mainIndex-articuloIndex3__imagenPedidosYa{
+    width: 300px;
+    height: auto;
+}
+

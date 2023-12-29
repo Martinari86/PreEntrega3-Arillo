@@ -1,0 +1,59 @@
+/*Estilo FOOTER - comun a todas las paginas del Sitio*/
+/*
+#footer{
+    grid-area: footer;
+    background-color: red;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    h2{
+        font-family: 'Lato', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 4px 2px 9px black;
+        &:hover{
+          font-size: 40px;
+            }
+        }     
+    img{
+        width: 150px;
+        height: 100%;    
+        &:hover{
+            width: 175px;
+            height: auto;
+            box-shadow: 2px -1px 94px 17px white;
+            -webkit-box-shadow: 2px -1px 94px 17px white;
+            -moz-box-shadow: 2px -1px 94px 17px white;
+            }
+        }        
+}
+*/
+
+/*Estilo FOOTER - comun a todas las paginas del Sitio*/
+
+#footer{
+    grid-area: footer;
+    background-color: red;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+
+}
+
+.footer__texto{
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 4px 2px 9px black;
+    
+}
+
+.footer__imagen{
+    width: 150px;
+    height: 100%;
+    
+}
+
+

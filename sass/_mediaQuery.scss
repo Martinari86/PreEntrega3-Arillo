@@ -1,0 +1,338 @@
+/* MEDIA QUERYS */
+
+/* BreakPoints
+320px           Celulares Verticales
+480px           Celulares Horizontales
+600px           Tablets chicas
+768px/1023px    Tablets grandes
+1024px          Notebooks
+1200px          Monitores
+*/
+
+
+@media (max-width:710px) {
+    /* Media Query para INDEX */
+    .mainIndex__articuloIndex2{
+        flex-direction: column;
+        
+    }
+    
+    .mainIndex__articuloIndex3{
+        flex-direction: column;
+    }
+    
+    .mainIndex-articuloIndex1__textoBienvenida{
+        font-size: 50px;
+        width: auto;
+        color: white;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        text-shadow: 4px 2px 9px black;
+    
+    }
+    
+    .mainIndex-articuloIndex2__imagenPortada{
+        width: 300px;
+        height: auto;
+    }
+    
+    .mainIndex-articuloIndex2__textoPortada{
+        font-size: 40px;      
+    }
+    
+    .mainIndex-articuloIndex3__textoPedidosYa{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .mainIndex-articuloIndex3__imagenPedidosYa{
+        width: 150px;
+        height: auto;
+    }
+    /*Media Query PRINCIPAL*/
+
+    .mainPrincipal__articulo2{
+        align-items: center;
+        flex-direction: column        
+    }
+
+    .mainPrincipal-articulo1__texto{
+        font-size: 40px;
+
+    }
+
+    .mainPrincipal-articulo2__imagen1,
+    .mainPrincipal-articulo2__imagen2,
+    .mainPrincipal-articulo2__imagen3{
+        width: 300px;    
+    }
+
+    .mainPrincipal-articulo3__texto{
+        font-size: 30px;
+        }
+
+    .mainPrincipal-articulo3__imagen1,
+    .mainPrincipal-articulo3__imagen2,
+    .mainPrincipal-articulo3__imagen3{
+        width: 500px;
+    }
+
+    /*Media Query Hamburguesas */
+    
+    .mainHamburguesas__articulo2{
+        flex-direction: column; 
+    }
+    
+    .mainHamburguesas-articulo1__texto{
+        font-size: 40px;
+        font-family: 'Lato', sans-serif;
+        color:white;
+        text-shadow: 4px 2px 9px black;
+    }
+    
+    .mainHamburguesas-pruducto1__div1,
+    .mainHamburguesas-pruducto2__div1,
+    .mainHamburguesas-pruducto3__div1,
+    .mainHamburguesas-pruducto4__div1{
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+    }
+    
+    .mainHamburguesas-pruducto1-div__imagen,
+    .mainHamburguesas-pruducto2-div__imagen,
+    .mainHamburguesas-pruducto3-div__imagen,
+    .mainHamburguesas-pruducto4-div__imagen{
+        width: 300px;
+
+    }
+    
+    .mainHamburguesas-pruducto1-divTexto__texto1,
+    .mainHamburguesas-pruducto2-divTexto__texto1,
+    .mainHamburguesas-pruducto3-divTexto__texto1,
+    .mainHamburguesas-pruducto4-divTexto__texto1{
+        font-size: 30px;
+    }
+    
+    .mainHamburguesas-pruducto1-divTexto__texto2,
+    .mainHamburguesas-pruducto2-divTexto__texto2,
+    .mainHamburguesas-pruducto3-divTexto__texto2,
+    .mainHamburguesas-pruducto4-divTexto__texto2{
+        font-size: 20px;
+    }
+
+    /* Media Query Nosotros */
+
+
+    .mainNosotros__articulo2{
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+
+    }
+
+    .mainNosotros-articulo1__texto1{
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+        color:white;
+        text-shadow: 4px 2px 9px black;
+    }
+
+    .mainNosotros-articulo1__texto2{
+        font-size: 40px;
+        font-family: 'Lato', sans-serif;
+        color:white;
+        margin-top: 100px;
+        text-shadow: 4px 2px 9px black;
+    }
+
+    .mainNosotros-articulo2__CV1,
+    .mainNosotros-articulo2__CV2,
+    .mainNosotros-articulo2__CV3{
+        flex-direction: column; 
+    }
+
+
+    .mainNosotros-articulo2-CV1__texto,
+    .mainNosotros-articulo2-CV2__texto,
+    .mainNosotros-articulo2-CV3__texto{
+        font-size: 15px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Estilo SUCURSALES */
+
+
+    .mainSucursales-articulo1__texto{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .mainSucursales__articulo2{
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+    }
+
+    .mainSucursales-articulo2__ubicacion1,
+    .mainSucursales-articulo2__ubicacion2,
+    .mainSucursales-articulo2__ubicacion3{
+        flex-direction: column; 
+    }
+
+    .mainSucursales-articulo2-ubicacion1__maps,
+    .mainSucursales-articulo2-ubicacion2__maps{
+        width: 80%;
+        height: 80%; 
+    }
+
+    .mainSucursales-articulo2-ubicacion1__texto,
+    .mainSucursales-articulo2-ubicacion2__texto{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    /* Media Query Contacto */
+
+    .mainContacto-articulo2-formulario-linea1__etiqueta1,
+    .mainContacto-articulo2-formulario-linea1__etiqueta2,
+    .mainContacto-articulo2-formulario-linea1__etiqueta3,
+    .mainContacto-articulo2-formulario-linea1__etiqueta4,
+    .mainContacto-articulo2-formulario-linea1__etiqueta5{
+    
+        font-size: 20px;
+        align-content: center;
+
+    }
+
+    .mainContacto-articulo1__texto{
+        font-size: 30px;
+        text-align: center;
+    
+    }
+
+    .mainContacto-articulo2-formulario-linea1__input1,
+    .mainContacto-articulo2-formulario-linea1__input2,
+    .mainContacto-articulo2-formulario-linea1__input3,
+    .mainContacto-articulo2-formulario-linea1__input4,
+    .mainContacto-articulo2-formulario-linea1__input5{
+        width: 70%;
+        height: 30px;
+    }
+
+    /* Media Query para FOOTER */
+    
+    .footer__texto{
+        font-size: 15px;  
+    }
+    
+    .footer__imagen{
+        width: 100px;
+        height: 100%;
+        
+    }
+  
+
+    
+}
+
+ @media (min-width:711px) and (max-width:1000px){ 
+    /* Media Query para INDEX */
+    .mainIndex__articuloIndex2{
+        flex-direction: row;
+        
+    }
+    
+    .mainIndex__articuloIndex3{
+        flex-direction: column;
+    }
+    
+    .mainIndex-articuloIndex1__textoBienvenida{
+        font-size: 70px;
+        width: auto;
+        color: white;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        text-shadow: 4px 2px 9px black;
+    
+    }
+    
+    .mainIndex-articuloIndex2__imagenPortada{
+        width: 300px;
+        height: auto;
+    }
+    
+    .mainIndex-articuloIndex2__textoPortada{
+        font-size: 40px;      
+    }
+    
+    .mainIndex-articuloIndex3__textoPedidosYa{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .mainIndex-articuloIndex3__imagenPedidosYa{
+        width: 150px;
+        height: auto;
+    }
+        /*Media Query PRINCIPAL*/
+
+    .mainPrincipal__articulo2{
+        align-items: center;
+        flex-direction: column        
+    }
+
+    .mainPrincipal-articulo1__texto{
+        font-size: 50px;
+
+    }
+
+    .mainPrincipal-articulo2__imagen1,
+    .mainPrincipal-articulo2__imagen2,
+    .mainPrincipal-articulo2__imagen3{
+        width: 50%;    
+    }
+
+    .mainPrincipal-articulo3__texto{
+        font-size: 30px;
+        }
+
+    .mainPrincipal-articulo3__imagen1,
+    .mainPrincipal-articulo3__imagen2,
+    .mainPrincipal-articulo3__imagen3{
+        width: 500px;
+    }
+
+    /* Media Query Nosotros */
+
+     .mainNosotros-articulo1__texto1{
+        font-size: 30px;
+       
+    }
+
+    .mainNosotros-articulo1__texto2{
+        font-size: 50px;
+        font-family: 'Lato', sans-serif;
+        color:white;
+        margin-top: 100px;
+        text-shadow: 4px 2px 9px black;
+    }
+
+    .mainNosotros-articulo2__CV1,
+    .mainNosotros-articulo2__CV2,
+    .mainNosotros-articulo2__CV3{
+        flex-direction: column; 
+    }
+
+
+    .mainNosotros-articulo2-CV1__texto,
+    .mainNosotros-articulo2-CV2__texto,
+    .mainNosotros-articulo2-CV3__texto{
+        font-size: 25px;
+        text-align: center;
+        padding: 20px;
+    }
+      
+}
+

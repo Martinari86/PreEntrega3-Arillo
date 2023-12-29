@@ -1,0 +1,66 @@
+/* Estilo SUCURSALES */
+
+#cuerpoSucursales{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    background-color: red;
+    justify-content:space-evenly;
+}
+
+#mainSucursales{
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    
+}
+
+.mainSucursales__articulo1{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+
+}
+
+.mainSucursales-articulo1__texto{
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    color:white;
+    text-shadow: 4px 2px 9px black;
+}
+
+.mainSucursales__articulo2{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.mainSucursales-articulo2__ubicacion1,
+.mainSucursales-articulo2__ubicacion2,
+.mainSucursales-articulo2__ubicacion3{
+    display: flex;
+    align-items: center;
+    flex-direction: row; 
+}
+
+.mainSucursales-articulo2-ubicacion1__maps,
+.mainSucursales-articulo2-ubicacion2__maps{
+    width: 500px;
+    height: 500px;
+    border-radius: 25px;
+    padding: 10px; 
+}
+
+.mainSucursales-articulo2-ubicacion1__texto,
+.mainSucursales-articulo2-ubicacion2__texto{
+    font-size: 35px;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    color:white;
+    text-shadow: 4px 2px 9px black;
+}

@@ -1,598 +1,561 @@
 /* Estilos de Fuente */
 /* Logo font-family: 'Lato', sans-serif;*/
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900");
 /* Textos font-family: 'Vina Sans', sans-serif;*/
-@import url('https://fonts.googleapis.com/css2?family=Vina+Sans');
-
+@import url("https://fonts.googleapis.com/css2?family=Vina+Sans");
+/*Importaciones */
 /* Estilo Inicial */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/*Estilo INDEX*/
-
-#mainIndex{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20% repeat(2,1fr);
-    grid-template-areas: 
-    "articuloIndex1"
-    "articuloIndex2"
-    "articuloIndex3";
-    background-color: red;
-    gap: 20px
+body {
+  max-width: 2000px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.mainIndex__articuloIndex1{
-    grid-area: articuloIndex1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.mainIndex__articuloIndex2{
-    grid-area: articuloIndex2;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.mainIndex__articuloIndex3{
-    grid-area: articuloIndex3;
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-}
-
-.mainIndex-articuloIndex1__textoBienvenida{
-    font-size: 90px;
-    width: auto;
-    color: white;
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    text-shadow: 4px 2px 9px black;
-
-}
-
-.mainIndex-articuloIndex2__imagenPortada{
-    width: auto;
-    height: auto;
-    border-radius: 75%;
-}
-
-.mainIndex-articuloIndex2__textoPortada{
-    font-size: 90px;
-    font-family: 'Vina Sans', sans-serif;
-    color:white;
-    text-decoration:none;
-    margin: 50px;
-    text-shadow: 4px 2px 9px black;
-    
-}
-
-.mainIndex-articuloIndex3__textoPedidosYa{
-    font-size: 50px;
-    font-family: 'Lato', sans-serif;
-    color:white;
-    text-shadow: 4px 2px 9px black;
-}
-
-.mainIndex-articuloIndex3__imagenPedidosYa{
-    width: 300px;
-    height: auto;
-}
-
-/*Estilo PRINCIPAL*/
-
-#cuerpoPrincipal{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr 100px;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-    background-color: red;
-    gap: 20px
-
-}
-
-#mainPrincipal{
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-}
-
-.mainPrincipal__articulo1{ 
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.mainPrincipal__articulo2{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-      
-}
-
-.mainPrincipal__articulo3{
-    display: flex;
-    align-items: center;
-    justify-content:space-evenly;
-    flex-direction: column;   
-    
-}
-
-.mainPrincipal-articulo1__texto{
-    font-size: 550%;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    color:white;
-    text-shadow: 4px 2px 9px black;
-    
-}
-
-
-.mainPrincipal-articulo2__imagen1,
-.mainPrincipal-articulo2__imagen2,
-.mainPrincipal-articulo2__imagen3{
-    width: 25%;
-    height: auto;
-    border-radius: 70px;
-    padding:20px;
-  
-}
-
-.mainPrincipal-articulo3__div{
-    display: flex;
-    align-items: center;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
-}
-
-.mainPrincipal-articulo3__texto{
-    font-size: 50px;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    color:white;
-    text-shadow: 4px 2px 9px black;
-  
-    
-}
-
-.mainPrincipal-articulo3__imagen1,
-.mainPrincipal-articulo3__imagen2,
-.mainPrincipal-articulo3__imagen3{
-    width: 50%;
-    height: auto;
-    border-radius: 25px;
-    padding: 10px;
-    
-}
-
-/* Estilo Hamburguesas */
-
-#cuerpoHamburguesas{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr 100px;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-    background-color: red;
-    justify-content:space-evenly;
-}
-
-#mainHamburguesas{
-    grid-area: main;
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
-    
-}
-
-.mainHamburguesas__articulo2{
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
-
-}
-
-.mainHamburguesas__articulo1{
-    text-align: center;
-    align-items: center;
-    color:white;
-    margin: 50px;
-}
-
-.mainHamburguesas-articulo1__texto{
-    font-size: 90px;
-    font-family: 'Lato', sans-serif;
-    color:white;
-    text-shadow: 4px 2px 9px black;
-}
-
-.mainHamburguesas-pruducto1__div1,
-.mainHamburguesas-pruducto2__div1,
-.mainHamburguesas-pruducto3__div1,
-.mainHamburguesas-pruducto4__div1{
-    display: flex;
-    align-items: center;
-    flex-direction: row; 
-}
-
-.mainHamburguesas-pruducto1-div__imagen,
-.mainHamburguesas-pruducto2-div__imagen,
-.mainHamburguesas-pruducto3-div__imagen,
-.mainHamburguesas-pruducto4-div__imagen{
-    width: 50%;
-    height: auto;
-    border-radius: 25px;
-    padding: 10px; 
-}
-
-.mainHamburguesas-pruducto1-divTexto__texto1,
-.mainHamburguesas-pruducto2-divTexto__texto1,
-.mainHamburguesas-pruducto3-divTexto__texto1,
-.mainHamburguesas-pruducto4-divTexto__texto1{
-    font-size: 50px;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    color:white;
-    text-shadow: 4px 2px 9px black;
-}
-
-.mainHamburguesas-pruducto1-divTexto__texto2,
-.mainHamburguesas-pruducto2-divTexto__texto2,
-.mainHamburguesas-pruducto3-divTexto__texto2,
-.mainHamburguesas-pruducto4-divTexto__texto2{
-    font-size: 25px;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    color:white;
-    padding: 25px;
-    text-shadow: 4px 2px 9px black;
-}
-
-/* Estilo Nosotros */
-
-#cuerpoNosotros{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr 100px;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-    background-color: red;
-    justify-content:space-evenly;
-}
-
-#mainNosotros{
-    grid-area: main;
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
-    
-}
-
-.mainNosotros__articulo2{
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
-
-}
-
-.mainNosotros__articulo1{
-    text-align: center;
-    align-items: center;
-    color:white;
-    margin: 50px;
-}
-
-.mainNosotros-articulo1__texto1{
-    font-size: 40px;
-    font-family: 'Lato', sans-serif;
-    color:white;
-    text-shadow: 4px 2px 9px black;
-}
-
-.mainNosotros-articulo1__texto2{
-    font-size: 100px;
-    font-family: 'Lato', sans-serif;
-    color:white;
-    margin-top: 100px;
-    text-shadow: 4px 2px 9px black;
-}
-
-.mainNosotros-articulo2__CV1,
-.mainNosotros-articulo2__CV2,
-.mainNosotros-articulo2__CV3{
-    display: flex;
-    align-items: center;
-    flex-direction: row; 
-}
-
-.mainNosotros-articulo2-CV1__imagen,
-.mainNosotros-articulo2-CV2__imagen,
-.mainNosotros-articulo2-CV3__imagen{
-    width: 200px;
-    height: 200px;
-    border-radius: 25px;
-    padding: 10px; 
-}
-
-.mainNosotros-articulo2-CV1__texto,
-.mainNosotros-articulo2-CV2__texto,
-.mainNosotros-articulo2-CV3__texto{
-    font-size: 35px;
-    text-align: left;
-    font-family: 'Lato', sans-serif;
-    color:white;
-    text-shadow: 4px 2px 9px black;
-}
-
-.mainHamburguesas-pruducto1-divTexto__texto2,
-.mainHamburguesas-pruducto2-divTexto__texto2,
-.mainHamburguesas-pruducto3-divTexto__texto2,
-.mainHamburguesas-pruducto4-divTexto__texto2{
-    font-size: 25px;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    color:white;
-    padding: 25px;
-    text-shadow: 4px 2px 9px black;
-}
-
-/* Estilo SUCURSALES */
-
-#cuerpoSucursales{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr 100px;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-    background-color: red;
-    justify-content:space-evenly;
-}
-
-#mainSucursales{
-    grid-area: main;
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
-    
-}
-
-.mainSucursales__articulo1{
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
-
-}
-
-.mainSucursales-articulo1__texto{
-    font-size: 40px;
-    font-family: 'Lato', sans-serif;
-    color:white;
-    text-shadow: 4px 2px 9px black;
-}
-
-.mainSucursales__articulo2{
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
-}
-
-.mainSucursales-articulo2__ubicacion1,
-.mainSucursales-articulo2__ubicacion2,
-.mainSucursales-articulo2__ubicacion3{
-    display: flex;
-    align-items: center;
-    flex-direction: row; 
-}
-
-.mainSucursales-articulo2-ubicacion1__maps,
-.mainSucursales-articulo2-ubicacion2__maps{
-    width: 500px;
-    height: 500px;
-    border-radius: 25px;
-    padding: 10px; 
-}
-
-.mainSucursales-articulo2-ubicacion1__texto,
-.mainSucursales-articulo2-ubicacion2__texto{
-    font-size: 35px;
-    text-align: left;
-    font-family: 'Lato', sans-serif;
-    color:white;
-    text-shadow: 4px 2px 9px black;
-}
-
-/* Estilo COMENTARIOS */
-
-#cuerpoContacto{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr 100px;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-    background-color: red;
-    justify-content:space-evenly;
-}
-
-#mainContacto{
-    grid-area: main;
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
-    
-}
-
-.mainContacto__articulo1{
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
-
-}
-
-.mainContacto-articulo1__texto{
-    font-size: 40px;
-    font-family: 'Lato', sans-serif;
-    color:white;
-    margin: 50px;
-    text-shadow: 4px 2px 9px black;
-}
-
-.mainContacto__articulo1{
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
-}
-
-.mainContacto-articulo2__formulario{
-    display: flex;
-    align-items:flex-start;
-    flex-direction: column; 
-    justify-content:space-evenly;
-}
-
-.mainContacto-articulo2-formulario__linea1,
-.mainContacto-articulo2-formulario__linea2,
-.mainContacto-articulo2-formulario__linea3,
-.mainContacto-articulo2-formulario__linea4,
-.mainContacto-articulo2-formulario__linea5{
-    display: flex;
-    text-align: center;
-    align-content: center;
-    flex-direction: row; 
-    margin: 10px; 
-    gap: 10px
-}
-
-.mainContacto-articulo2-formulario-linea1__etiqueta1,
-.mainContacto-articulo2-formulario-linea1__etiqueta2,
-.mainContacto-articulo2-formulario-linea1__etiqueta3,
-.mainContacto-articulo2-formulario-linea1__etiqueta4,
-.mainContacto-articulo2-formulario-linea1__etiqueta5{
-    width: 250px;
-    height: 50px;
-    font-size: 25px;
-    text-align: center;
-    justify-content: center;
-    font-family: 'Lato', sans-serif;
-    color:white;
-    text-shadow: 4px 2px 9px black;
-}
-
-.mainContacto-articulo2-formulario-linea1__input1,
-.mainContacto-articulo2-formulario-linea1__input2,
-.mainContacto-articulo2-formulario-linea1__input3,
-.mainContacto-articulo2-formulario-linea1__input4,
-.mainContacto-articulo2-formulario-linea1__input5{
-    width: 70%;
-    height: 50px;
-}
-
 
 /*Estilo HEADER - comun a todas las paginas del Sitio*/
-
-#header{
-    width: 100%;
-    height: 100px;
-    background-color: red;
-    grid-area: header;
-    -webkit-box-shadow: 0px 13px 33px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 13px 33px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 13px 33px 0px rgba(0,0,0,0.75);
-
+#header {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  grid-area: header;
+  -webkit-box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 0.75);
 }
 
-
-.header__logo{
-    width: 80px;
-    height: 80px;
-    padding: 5px;
+.header__logo {
+  width: 80px;
+  height: 80px;
+  padding: 5px;
 }
 
-
- .header-menu__navegacion{
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    justify-items: center;
-    font-size: 30px;
+.header-menu__navegacion {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  justify-items: center;
+  font-size: 30px;
 }
 
-.header-menu-navegacion__texto{
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    color: white;
+.header-menu-navegacion__texto {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: white;
 }
 
-.header-menu-navegacion__enlace{
-    text-decoration:none;
+.header-menu-navegacion__enlace {
+  text-decoration: none;
 }
-
 
 /*Estilo FOOTER - comun a todas las paginas del Sitio*/
-
+/*
 #footer{
     grid-area: footer;
     background-color: red;
     display: flex;
     align-items:center;
     justify-content:space-around;
+    h2{
+        font-family: 'Lato', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 4px 2px 9px black;
+        &:hover{
+          font-size: 40px;
+            }
+        }     
+    img{
+        width: 150px;
+        height: 100%;    
+        &:hover{
+            width: 175px;
+            height: auto;
+            box-shadow: 2px -1px 94px 17px white;
+            -webkit-box-shadow: 2px -1px 94px 17px white;
+            -moz-box-shadow: 2px -1px 94px 17px white;
+            }
+        }        
+}
+*/
+/*Estilo FOOTER - comun a todas las paginas del Sitio*/
+#footer {
+  grid-area: footer;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.footer__texto{
-    font-family: 'Lato', sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
-    text-shadow: 4px 2px 9px black;
-    
+.footer__texto {
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 4px 2px 9px black;
 }
 
-.footer__imagen{
-    width: 150px;
-    height: 100%;
-    
+.footer__imagen {
+  width: 150px;
+  height: 100%;
 }
 
-
-/* PSEUDOCLASES */
-/* Index */
-.mainIndex-articuloIndex2__textoPortada:hover {
-    font-size: 100px;
-    text-shadow: 4px 2px 9px black;
+/*Estilo INDEX*/
+#mainIndex {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% repeat(2, 1fr);
+  grid-template-areas: "articuloIndex1" "articuloIndex2" "articuloIndex3";
+  background-color: red;
+  gap: 20px;
 }
 
-.mainIndex-articuloIndex3__imagenPedidosYa:hover,
-.footer__imagen:hover{
-    width: 175px;
-    height: auto;
-    box-shadow: 2px -1px 94px 17px white;
-    -webkit-box-shadow: 2px -1px 94px 17px white;
-    -moz-box-shadow: 2px -1px 94px 17px white;
+.mainIndex__articuloIndex1 {
+  grid-area: articuloIndex1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.nav-link:hover{
-    font-weight: bold !important;
+.mainIndex__articuloIndex2 {
+  grid-area: articuloIndex2;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.mainIndex__articuloIndex3 {
+  grid-area: articuloIndex3;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mainIndex-articuloIndex1__textoBienvenida {
+  font-size: 90px;
+  width: auto;
+  color: white;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  text-shadow: 4px 2px 9px black;
+}
+
+.mainIndex-articuloIndex2__imagenPortada {
+  width: auto;
+  height: auto;
+  border-radius: 75%;
+}
+
+.mainIndex-articuloIndex2__textoPortada {
+  font-size: 90px;
+  font-family: "Vina Sans", sans-serif;
+  color: white;
+  text-decoration: none;
+  margin: 50px;
+  text-shadow: 4px 2px 9px black;
+}
+
+.mainIndex-articuloIndex3__textoPedidosYa {
+  font-size: 50px;
+  font-family: "Lato", sans-serif;
+  color: white;
+  text-shadow: 4px 2px 9px black;
+}
+
+.mainIndex-articuloIndex3__imagenPedidosYa {
+  width: 300px;
+  height: auto;
+}
+
+/* Estilo Hamburguesas */
+#cuerpoHamburguesas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas: "header" "main" "footer";
+  background-color: red;
+  justify-content: space-evenly;
+}
+
+#mainHamburguesas {
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mainHamburguesas__articulo2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mainHamburguesas__articulo1 {
+  text-align: center;
+  align-items: center;
+  color: white;
+  margin: 50px;
+}
+
+.mainHamburguesas-articulo1__texto {
+  font-size: 90px;
+  font-family: "Lato", sans-serif;
+  color: white;
+  text-shadow: 4px 2px 9px black;
+}
+
+.mainHamburguesas-pruducto1__div1,
+.mainHamburguesas-pruducto2__div1,
+.mainHamburguesas-pruducto3__div1,
+.mainHamburguesas-pruducto4__div1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.mainHamburguesas-pruducto1-div__imagen,
+.mainHamburguesas-pruducto2-div__imagen,
+.mainHamburguesas-pruducto3-div__imagen,
+.mainHamburguesas-pruducto4-div__imagen {
+  width: 50%;
+  height: auto;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.mainHamburguesas-pruducto1-divTexto__texto1,
+.mainHamburguesas-pruducto2-divTexto__texto1,
+.mainHamburguesas-pruducto3-divTexto__texto1,
+.mainHamburguesas-pruducto4-divTexto__texto1 {
+  font-size: 50px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: white;
+  text-shadow: 4px 2px 9px black;
+}
+
+.mainHamburguesas-pruducto1-divTexto__texto2,
+.mainHamburguesas-pruducto2-divTexto__texto2,
+.mainHamburguesas-pruducto3-divTexto__texto2,
+.mainHamburguesas-pruducto4-divTexto__texto2 {
+  font-size: 25px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: white;
+  padding: 25px;
+  text-shadow: 4px 2px 9px black;
+}
+
+/*Estilo PRINCIPAL*/
+#cuerpoPrincipal {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas: "header" "main" "footer";
+  background-color: red;
+  gap: 20px;
+}
+
+#mainPrincipal {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainPrincipal__articulo1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mainPrincipal__articulo2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.mainPrincipal__articulo3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.mainPrincipal-articulo1__texto {
+  font-size: 550%;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: white;
+  text-shadow: 4px 2px 9px black;
+}
+
+.mainPrincipal-articulo2__imagen1,
+.mainPrincipal-articulo2__imagen2,
+.mainPrincipal-articulo2__imagen3 {
+  width: 25%;
+  height: auto;
+  border-radius: 70px;
+  padding: 20px;
+}
+
+.mainPrincipal-articulo3__div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.mainPrincipal-articulo3__texto {
+  font-size: 50px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: white;
+  text-shadow: 4px 2px 9px black;
+}
+
+.mainPrincipal-articulo3__imagen1,
+.mainPrincipal-articulo3__imagen2,
+.mainPrincipal-articulo3__imagen3 {
+  width: 50%;
+  height: auto;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+/* Estilo SUCURSALES */
+#cuerpoSucursales {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas: "header" "main" "footer";
+  background-color: red;
+  justify-content: space-evenly;
+}
+
+#mainSucursales {
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mainSucursales__articulo1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mainSucursales-articulo1__texto {
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  color: white;
+  text-shadow: 4px 2px 9px black;
+}
+
+.mainSucursales__articulo2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mainSucursales-articulo2__ubicacion1,
+.mainSucursales-articulo2__ubicacion2,
+.mainSucursales-articulo2__ubicacion3 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.mainSucursales-articulo2-ubicacion1__maps,
+.mainSucursales-articulo2-ubicacion2__maps {
+  width: 500px;
+  height: 500px;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.mainSucursales-articulo2-ubicacion1__texto,
+.mainSucursales-articulo2-ubicacion2__texto {
+  font-size: 35px;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  color: white;
+  text-shadow: 4px 2px 9px black;
+}
+
+/* Estilo Nosotros */
+#cuerpoNosotros {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas: "header" "main" "footer";
+  background-color: red;
+  justify-content: space-evenly;
+}
+
+#mainNosotros {
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mainNosotros__articulo2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mainNosotros__articulo1 {
+  text-align: center;
+  align-items: center;
+  color: white;
+  margin: 50px;
+}
+
+.mainNosotros-articulo1__texto1 {
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  color: white;
+  text-shadow: 4px 2px 9px black;
+}
+
+.mainNosotros-articulo1__texto2 {
+  font-size: 100px;
+  font-family: "Lato", sans-serif;
+  color: white;
+  margin-top: 100px;
+  text-shadow: 4px 2px 9px black;
+}
+
+.mainNosotros-articulo2__CV1,
+.mainNosotros-articulo2__CV2,
+.mainNosotros-articulo2__CV3 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.mainNosotros-articulo2-CV1__imagen,
+.mainNosotros-articulo2-CV2__imagen,
+.mainNosotros-articulo2-CV3__imagen {
+  width: 200px;
+  height: 200px;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.mainNosotros-articulo2-CV1__texto,
+.mainNosotros-articulo2-CV2__texto,
+.mainNosotros-articulo2-CV3__texto {
+  font-size: 35px;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  color: white;
+  text-shadow: 4px 2px 9px black;
+}
+
+.mainHamburguesas-pruducto1-divTexto__texto2,
+.mainHamburguesas-pruducto2-divTexto__texto2,
+.mainHamburguesas-pruducto3-divTexto__texto2,
+.mainHamburguesas-pruducto4-divTexto__texto2 {
+  font-size: 25px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: white;
+  padding: 25px;
+  text-shadow: 4px 2px 9px black;
+}
+
+/* Estilo CONTACTO */
+#cuerpoContacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas: "header" "main" "footer";
+  background-color: red;
+  justify-content: space-evenly;
+}
+
+#mainContacto {
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mainContacto__articulo1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mainContacto-articulo1__texto {
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  color: white;
+  margin: 50px;
+  text-shadow: 4px 2px 9px black;
+}
+
+.mainContacto__articulo1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mainContacto-articulo2__formulario {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.mainContacto-articulo2-formulario__linea1,
+.mainContacto-articulo2-formulario__linea2,
+.mainContacto-articulo2-formulario__linea3,
+.mainContacto-articulo2-formulario__linea4,
+.mainContacto-articulo2-formulario__linea5 {
+  display: flex;
+  text-align: center;
+  align-content: center;
+  flex-direction: row;
+  margin: 10px;
+  gap: 10px;
+}
+
+.mainContacto-articulo2-formulario-linea1__etiqueta1,
+.mainContacto-articulo2-formulario-linea2__etiqueta2,
+.mainContacto-articulo2-formulario-linea3__etiqueta3,
+.mainContacto-articulo2-formulario-linea4__etiqueta4,
+.mainContacto-articulo2-formulario-linea5__etiqueta5 {
+  width: 250px;
+  height: 50px;
+  font-size: 25px;
+  text-align: center;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  color: white;
+  text-shadow: 4px 2px 9px black;
+}
+
+.mainContacto-articulo2-formulario-linea1__input1,
+.mainContacto-articulo2-formulario-linea2__input2,
+.mainContacto-articulo2-formulario-linea3__input3,
+.mainContacto-articulo2-formulario-linea4__input4,
+.mainContacto-articulo2-formulario-linea5__input5 {
+  width: 70%;
+  height: 50px;
 }
 
 /* MEDIA QUERYS */
-
 /* BreakPoints
 320px           Celulares Verticales
 480px           Celulares Horizontales
@@ -601,357 +564,317 @@
 1024px          Notebooks
 1200px          Monitores
 */
-
-
-@media (max-width:710px) {
-    /* Media Query para INDEX */
-    .mainIndex__articuloIndex2{
-        flex-direction: column;
-        
-    }
-    
-    .mainIndex__articuloIndex3{
-        flex-direction: column;
-    }
-    
-    .mainIndex-articuloIndex1__textoBienvenida{
-        font-size: 50px;
-        width: auto;
-        color: white;
-        font-family: 'Lato', sans-serif;
-        text-align: center;
-        text-shadow: 4px 2px 9px black;
-    
-    }
-    
-    .mainIndex-articuloIndex2__imagenPortada{
-        width: 300px;
-        height: auto;
-    }
-    
-    .mainIndex-articuloIndex2__textoPortada{
-        font-size: 40px;      
-    }
-    
-    .mainIndex-articuloIndex3__textoPedidosYa{
-        font-size: 30px;
-        text-align: center;
-    }
-    
-    .mainIndex-articuloIndex3__imagenPedidosYa{
-        width: 150px;
-        height: auto;
-    }
-    /*Media Query PRINCIPAL*/
-
-    .mainPrincipal__articulo2{
-        align-items: center;
-        flex-direction: column        
-    }
-
-    .mainPrincipal-articulo1__texto{
-        font-size: 40px;
-
-    }
-
-    .mainPrincipal-articulo2__imagen1,
-    .mainPrincipal-articulo2__imagen2,
-    .mainPrincipal-articulo2__imagen3{
-        width: 300px;    
-    }
-
-    .mainPrincipal-articulo3__texto{
-        font-size: 30px;
-        }
-
-    .mainPrincipal-articulo3__imagen1,
-    .mainPrincipal-articulo3__imagen2,
-    .mainPrincipal-articulo3__imagen3{
-        width: 500px;
-    }
-
-    /*Media Query Hamburguesas */
-    
-    .mainHamburguesas__articulo2{
-        flex-direction: column; 
-    }
-    
-    .mainHamburguesas-articulo1__texto{
-        font-size: 40px;
-        font-family: 'Lato', sans-serif;
-        color:white;
-        text-shadow: 4px 2px 9px black;
-    }
-    
-    .mainHamburguesas-pruducto1__div1,
-    .mainHamburguesas-pruducto2__div1,
-    .mainHamburguesas-pruducto3__div1,
-    .mainHamburguesas-pruducto4__div1{
-        display: flex;
-        align-items: center;
-        flex-direction: column; 
-    }
-    
-    .mainHamburguesas-pruducto1-div__imagen,
-    .mainHamburguesas-pruducto2-div__imagen,
-    .mainHamburguesas-pruducto3-div__imagen,
-    .mainHamburguesas-pruducto4-div__imagen{
-        width: 300px;
-
-    }
-    
-    .mainHamburguesas-pruducto1-divTexto__texto1,
-    .mainHamburguesas-pruducto2-divTexto__texto1,
-    .mainHamburguesas-pruducto3-divTexto__texto1,
-    .mainHamburguesas-pruducto4-divTexto__texto1{
-        font-size: 30px;
-    }
-    
-    .mainHamburguesas-pruducto1-divTexto__texto2,
-    .mainHamburguesas-pruducto2-divTexto__texto2,
-    .mainHamburguesas-pruducto3-divTexto__texto2,
-    .mainHamburguesas-pruducto4-divTexto__texto2{
-        font-size: 20px;
-    }
-
-    /* Media Query Nosotros */
-
-
-    .mainNosotros__articulo2{
-        display: flex;
-        align-items: center;
-        flex-direction: column; 
-
-    }
-
-    .mainNosotros-articulo1__texto1{
-        font-size: 20px;
-        font-family: 'Lato', sans-serif;
-        color:white;
-        text-shadow: 4px 2px 9px black;
-    }
-
-    .mainNosotros-articulo1__texto2{
-        font-size: 40px;
-        font-family: 'Lato', sans-serif;
-        color:white;
-        margin-top: 100px;
-        text-shadow: 4px 2px 9px black;
-    }
-
-    .mainNosotros-articulo2__CV1,
-    .mainNosotros-articulo2__CV2,
-    .mainNosotros-articulo2__CV3{
-        flex-direction: column; 
-    }
-
-
-    .mainNosotros-articulo2-CV1__texto,
-    .mainNosotros-articulo2-CV2__texto,
-    .mainNosotros-articulo2-CV3__texto{
-        font-size: 15px;
-        text-align: center;
-        padding: 20px;
-    }
-
-    /* Estilo SUCURSALES */
-
-
-    .mainSucursales-articulo1__texto{
-        font-size: 30px;
-        text-align: center;
-    }
-
-    .mainSucursales__articulo2{
-        display: flex;
-        align-items: center;
-        flex-direction: column; 
-    }
-
-    .mainSucursales-articulo2__ubicacion1,
-    .mainSucursales-articulo2__ubicacion2,
-    .mainSucursales-articulo2__ubicacion3{
-        flex-direction: column; 
-    }
-
-    .mainSucursales-articulo2-ubicacion1__maps,
-    .mainSucursales-articulo2-ubicacion2__maps{
-        width: 80%;
-        height: 80%; 
-    }
-
-    .mainSucursales-articulo2-ubicacion1__texto,
-    .mainSucursales-articulo2-ubicacion2__texto{
-        font-size: 25px;
-        text-align: center;
-    }
-
-    /* Media Query Contacto */
-
-    .mainContacto-articulo2-formulario-linea1__etiqueta1,
-    .mainContacto-articulo2-formulario-linea1__etiqueta2,
-    .mainContacto-articulo2-formulario-linea1__etiqueta3,
-    .mainContacto-articulo2-formulario-linea1__etiqueta4,
-    .mainContacto-articulo2-formulario-linea1__etiqueta5{
-    
-        font-size: 20px;
-        align-content: center;
-
-    }
-
-    .mainContacto-articulo1__texto{
-        font-size: 30px;
-        text-align: center;
-    
-    }
-
-    .mainContacto-articulo2-formulario-linea1__input1,
-    .mainContacto-articulo2-formulario-linea1__input2,
-    .mainContacto-articulo2-formulario-linea1__input3,
-    .mainContacto-articulo2-formulario-linea1__input4,
-    .mainContacto-articulo2-formulario-linea1__input5{
-        width: 70%;
-        height: 30px;
-    }
-
-    /* Media Query para FOOTER */
-    
-    .footer__texto{
-        font-size: 15px;  
-    }
-    
-    .footer__imagen{
-        width: 100px;
-        height: 100%;
-        
-    }
-
-    
-}
-
- @media (min-width:711px) and (max-width:1000px){ 
-    /* Media Query para INDEX */
-    .mainIndex__articuloIndex2{
-        flex-direction: row;
-        
-    }
-    
-    .mainIndex__articuloIndex3{
-        flex-direction: column;
-    }
-    
-    .mainIndex-articuloIndex1__textoBienvenida{
-        font-size: 70px;
-        width: auto;
-        color: white;
-        font-family: 'Lato', sans-serif;
-        text-align: center;
-        text-shadow: 4px 2px 9px black;
-    
-    }
-    
-    .mainIndex-articuloIndex2__imagenPortada{
-        width: 300px;
-        height: auto;
-    }
-    
-    .mainIndex-articuloIndex2__textoPortada{
-        font-size: 40px;      
-    }
-    
-    .mainIndex-articuloIndex3__textoPedidosYa{
-        font-size: 30px;
-        text-align: center;
-    }
-    
-    .mainIndex-articuloIndex3__imagenPedidosYa{
-        width: 150px;
-        height: auto;
-    }
-        /*Media Query PRINCIPAL*/
-
-    .mainPrincipal__articulo2{
-        align-items: center;
-        flex-direction: column        
-    }
-
-    .mainPrincipal-articulo1__texto{
-        font-size: 50px;
-
-    }
-
-    .mainPrincipal-articulo2__imagen1,
-    .mainPrincipal-articulo2__imagen2,
-    .mainPrincipal-articulo2__imagen3{
-        width: 50%;    
-    }
-
-    .mainPrincipal-articulo3__texto{
-        font-size: 30px;
-        }
-
-    .mainPrincipal-articulo3__imagen1,
-    .mainPrincipal-articulo3__imagen2,
-    .mainPrincipal-articulo3__imagen3{
-        width: 500px;
-    }
-
-    /* Media Query Nosotros */
-
-     .mainNosotros-articulo1__texto1{
-        font-size: 30px;
-       
-    }
-
-    .mainNosotros-articulo1__texto2{
-        font-size: 50px;
-        font-family: 'Lato', sans-serif;
-        color:white;
-        margin-top: 100px;
-        text-shadow: 4px 2px 9px black;
-    }
-
-    .mainNosotros-articulo2__CV1,
-    .mainNosotros-articulo2__CV2,
-    .mainNosotros-articulo2__CV3{
-        flex-direction: column; 
-    }
-
-
-    .mainNosotros-articulo2-CV1__texto,
-    .mainNosotros-articulo2-CV2__texto,
-    .mainNosotros-articulo2-CV3__texto{
-        font-size: 25px;
-        text-align: center;
-        padding: 20px;
-    }
-      
-}
-
-
-
-/* Modificaciones a estilos de BOOTSTRAP */
-
-.nav-item{
-    font-size: 25px !important;
-    font-weight:lighter;
+@media (max-width: 710px) {
+  /* Media Query para INDEX */
+  .mainIndex__articuloIndex2 {
+    flex-direction: column;
+  }
+  .mainIndex__articuloIndex3 {
+    flex-direction: column;
+  }
+  .mainIndex-articuloIndex1__textoBienvenida {
+    font-size: 50px;
+    width: auto;
+    color: white;
+    font-family: "Lato", sans-serif;
+    text-align: center;
     text-shadow: 4px 2px 9px black;
+  }
+  .mainIndex-articuloIndex2__imagenPortada {
+    width: 300px;
+    height: auto;
+  }
+  .mainIndex-articuloIndex2__textoPortada {
+    font-size: 40px;
+  }
+  .mainIndex-articuloIndex3__textoPedidosYa {
+    font-size: 30px;
+    text-align: center;
+  }
+  .mainIndex-articuloIndex3__imagenPedidosYa {
+    width: 150px;
+    height: auto;
+  }
+  /*Media Query PRINCIPAL*/
+  .mainPrincipal__articulo2 {
+    align-items: center;
+    flex-direction: column;
+  }
+  .mainPrincipal-articulo1__texto {
+    font-size: 40px;
+  }
+  .mainPrincipal-articulo2__imagen1,
+  .mainPrincipal-articulo2__imagen2,
+  .mainPrincipal-articulo2__imagen3 {
+    width: 300px;
+  }
+  .mainPrincipal-articulo3__texto {
+    font-size: 30px;
+  }
+  .mainPrincipal-articulo3__imagen1,
+  .mainPrincipal-articulo3__imagen2,
+  .mainPrincipal-articulo3__imagen3 {
+    width: 500px;
+  }
+  /*Media Query Hamburguesas */
+  .mainHamburguesas__articulo2 {
+    flex-direction: column;
+  }
+  .mainHamburguesas-articulo1__texto {
+    font-size: 40px;
+    font-family: "Lato", sans-serif;
+    color: white;
+    text-shadow: 4px 2px 9px black;
+  }
+  .mainHamburguesas-pruducto1__div1,
+  .mainHamburguesas-pruducto2__div1,
+  .mainHamburguesas-pruducto3__div1,
+  .mainHamburguesas-pruducto4__div1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mainHamburguesas-pruducto1-div__imagen,
+  .mainHamburguesas-pruducto2-div__imagen,
+  .mainHamburguesas-pruducto3-div__imagen,
+  .mainHamburguesas-pruducto4-div__imagen {
+    width: 300px;
+  }
+  .mainHamburguesas-pruducto1-divTexto__texto1,
+  .mainHamburguesas-pruducto2-divTexto__texto1,
+  .mainHamburguesas-pruducto3-divTexto__texto1,
+  .mainHamburguesas-pruducto4-divTexto__texto1 {
+    font-size: 30px;
+  }
+  .mainHamburguesas-pruducto1-divTexto__texto2,
+  .mainHamburguesas-pruducto2-divTexto__texto2,
+  .mainHamburguesas-pruducto3-divTexto__texto2,
+  .mainHamburguesas-pruducto4-divTexto__texto2 {
+    font-size: 20px;
+  }
+  /* Media Query Nosotros */
+  .mainNosotros__articulo2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mainNosotros-articulo1__texto1 {
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    color: white;
+    text-shadow: 4px 2px 9px black;
+  }
+  .mainNosotros-articulo1__texto2 {
+    font-size: 40px;
+    font-family: "Lato", sans-serif;
+    color: white;
+    margin-top: 100px;
+    text-shadow: 4px 2px 9px black;
+  }
+  .mainNosotros-articulo2__CV1,
+  .mainNosotros-articulo2__CV2,
+  .mainNosotros-articulo2__CV3 {
+    flex-direction: column;
+  }
+  .mainNosotros-articulo2-CV1__texto,
+  .mainNosotros-articulo2-CV2__texto,
+  .mainNosotros-articulo2-CV3__texto {
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+  }
+  /* Estilo SUCURSALES */
+  .mainSucursales-articulo1__texto {
+    font-size: 30px;
+    text-align: center;
+  }
+  .mainSucursales__articulo2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mainSucursales-articulo2__ubicacion1,
+  .mainSucursales-articulo2__ubicacion2,
+  .mainSucursales-articulo2__ubicacion3 {
+    flex-direction: column;
+  }
+  .mainSucursales-articulo2-ubicacion1__maps,
+  .mainSucursales-articulo2-ubicacion2__maps {
+    width: 80%;
+    height: 80%;
+  }
+  .mainSucursales-articulo2-ubicacion1__texto,
+  .mainSucursales-articulo2-ubicacion2__texto {
+    font-size: 25px;
+    text-align: center;
+  }
+  /* Media Query Contacto */
+  .mainContacto-articulo2-formulario-linea1__etiqueta1,
+  .mainContacto-articulo2-formulario-linea1__etiqueta2,
+  .mainContacto-articulo2-formulario-linea1__etiqueta3,
+  .mainContacto-articulo2-formulario-linea1__etiqueta4,
+  .mainContacto-articulo2-formulario-linea1__etiqueta5 {
+    font-size: 20px;
+    align-content: center;
+  }
+  .mainContacto-articulo1__texto {
+    font-size: 30px;
+    text-align: center;
+  }
+  .mainContacto-articulo2-formulario-linea1__input1,
+  .mainContacto-articulo2-formulario-linea1__input2,
+  .mainContacto-articulo2-formulario-linea1__input3,
+  .mainContacto-articulo2-formulario-linea1__input4,
+  .mainContacto-articulo2-formulario-linea1__input5 {
+    width: 70%;
+    height: 30px;
+  }
+  /* Media Query para FOOTER */
+  .footer__texto {
+    font-size: 15px;
+  }
+  .footer__imagen {
+    width: 100px;
+    height: 100%;
+  }
+}
+@media (min-width: 711px) and (max-width: 1000px) {
+  /* Media Query para INDEX */
+  .mainIndex__articuloIndex2 {
+    flex-direction: row;
+  }
+  .mainIndex__articuloIndex3 {
+    flex-direction: column;
+  }
+  .mainIndex-articuloIndex1__textoBienvenida {
+    font-size: 70px;
+    width: auto;
+    color: white;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    text-shadow: 4px 2px 9px black;
+  }
+  .mainIndex-articuloIndex2__imagenPortada {
+    width: 300px;
+    height: auto;
+  }
+  .mainIndex-articuloIndex2__textoPortada {
+    font-size: 40px;
+  }
+  .mainIndex-articuloIndex3__textoPedidosYa {
+    font-size: 30px;
+    text-align: center;
+  }
+  .mainIndex-articuloIndex3__imagenPedidosYa {
+    width: 150px;
+    height: auto;
+  }
+  /*Media Query PRINCIPAL*/
+  .mainPrincipal__articulo2 {
+    align-items: center;
+    flex-direction: column;
+  }
+  .mainPrincipal-articulo1__texto {
+    font-size: 50px;
+  }
+  .mainPrincipal-articulo2__imagen1,
+  .mainPrincipal-articulo2__imagen2,
+  .mainPrincipal-articulo2__imagen3 {
+    width: 50%;
+  }
+  .mainPrincipal-articulo3__texto {
+    font-size: 30px;
+  }
+  .mainPrincipal-articulo3__imagen1,
+  .mainPrincipal-articulo3__imagen2,
+  .mainPrincipal-articulo3__imagen3 {
+    width: 500px;
+  }
+  /* Media Query Nosotros */
+  .mainNosotros-articulo1__texto1 {
+    font-size: 30px;
+  }
+  .mainNosotros-articulo1__texto2 {
+    font-size: 50px;
+    font-family: "Lato", sans-serif;
+    color: white;
+    margin-top: 100px;
+    text-shadow: 4px 2px 9px black;
+  }
+  .mainNosotros-articulo2__CV1,
+  .mainNosotros-articulo2__CV2,
+  .mainNosotros-articulo2__CV3 {
+    flex-direction: column;
+  }
+  .mainNosotros-articulo2-CV1__texto,
+  .mainNosotros-articulo2-CV2__texto,
+  .mainNosotros-articulo2-CV3__texto {
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+  }
+}
+/* Modificaciones a estilos de BOOTSTRAP */
+.nav-item {
+  font-size: 25px !important;
+  font-weight: lighter;
+  text-shadow: 4px 2px 9px black;
 }
 
-.nav-link{
-    color: white !important;
+.nav-link {
+  color: white !important;
 }
 
-.carousel-item{
-    justify-content: center !important;
+.carousel-item {
+  justify-content: center !important;
 }
 
-.navbar-nav{ 
-    background-color: red !important;
+.navbar-nav {
+  background-color: red !important;
 }
 
-.navbar-toggler-icon{
-    color: white !important
+.navbar-toggler-icon {
+  color: white !important;
 }
-t
+
+.mb-3 {
+  border: 0px !important;
+  background-color: red !important;
 }
+
+.card-title {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 4px 2px 9px black;
+}
+
+.card-text {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 4px 2px 9px black;
+}
+
+/* PSEUDOCLASES */
+/* Index */
+.mainIndex-articuloIndex2__textoPortada:hover {
+  font-size: 100px;
+  text-shadow: 4px 2px 9px black;
+}
+
+.mainIndex-articuloIndex3__imagenPedidosYa:hover {
+  width: 175px;
+  height: auto;
+  box-shadow: 2px -1px 94px 17px white;
+  -webkit-box-shadow: 2px -1px 94px 17px white;
+  -moz-box-shadow: 2px -1px 94px 17px white;
+}
+
+.nav-link:hover {
+  font-weight: bold !important;
+}
+
+/*# sourceMappingURL=style.css.map */

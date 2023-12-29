@@ -1,0 +1,84 @@
+/* Estilo Hamburguesas */
+
+#cuerpoHamburguesas{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    background-color: red;
+    justify-content:space-evenly;
+}
+
+#mainHamburguesas{
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    
+}
+
+.mainHamburguesas__articulo2{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+
+}
+
+.mainHamburguesas__articulo1{
+    text-align: center;
+    align-items: center;
+    color:white;
+    margin: 50px;
+}
+
+.mainHamburguesas-articulo1__texto{
+    font-size: 90px;
+    font-family: 'Lato', sans-serif;
+    color:white;
+    text-shadow: 4px 2px 9px black;
+}
+
+.mainHamburguesas-pruducto1__div1,
+.mainHamburguesas-pruducto2__div1,
+.mainHamburguesas-pruducto3__div1,
+.mainHamburguesas-pruducto4__div1{
+    display: flex;
+    align-items: center;
+    flex-direction: row; 
+}
+
+.mainHamburguesas-pruducto1-div__imagen,
+.mainHamburguesas-pruducto2-div__imagen,
+.mainHamburguesas-pruducto3-div__imagen,
+.mainHamburguesas-pruducto4-div__imagen{
+    width: 50%;
+    height: auto;
+    border-radius: 25px;
+    padding: 10px; 
+}
+
+.mainHamburguesas-pruducto1-divTexto__texto1,
+.mainHamburguesas-pruducto2-divTexto__texto1,
+.mainHamburguesas-pruducto3-divTexto__texto1,
+.mainHamburguesas-pruducto4-divTexto__texto1{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color:white;
+    text-shadow: 4px 2px 9px black;
+}
+
+.mainHamburguesas-pruducto1-divTexto__texto2,
+.mainHamburguesas-pruducto2-divTexto__texto2,
+.mainHamburguesas-pruducto3-divTexto__texto2,
+.mainHamburguesas-pruducto4-divTexto__texto2{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color:white;
+    padding: 25px;
+    text-shadow: 4px 2px 9px black;
+}
