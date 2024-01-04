@@ -50,7 +50,7 @@
         height: auto;
     }
     /*Media Query PRINCIPAL*/
-
+    
     .mainPrincipal__articulo2{
         align-items: center;
         flex-direction: column        
@@ -76,6 +76,7 @@
     .mainPrincipal-articulo3__imagen3{
         width: 500px;
     }
+    
 
     /*Media Query Hamburguesas */
     
@@ -278,6 +279,7 @@
     }
         /*Media Query PRINCIPAL*/
 
+    
     .mainPrincipal__articulo2{
         align-items: center;
         flex-direction: column        
@@ -303,12 +305,12 @@
     .mainPrincipal-articulo3__imagen3{
         width: 500px;
     }
+    
 
     /* Media Query Nosotros */
 
      .mainNosotros-articulo1__texto1{
-        font-size: 30px;
-       
+        font-size: 30px; 
     }
 
     .mainNosotros-articulo1__texto2{
@@ -332,7 +334,6 @@
         font-size: 25px;
         text-align: center;
         padding: 20px;
-    }
-      
+    }  
 }
 

@@ -11,15 +11,13 @@
 
 }
 
-
 .header__logo{
     width: 80px;
     height: 80px;
     padding: 5px;
 }
 
-
- .header-menu__navegacion{
+.header-menu__navegacion{
     list-style: none;
     display: flex;
     gap: 15px;
@@ -36,3 +34,4 @@
 .header-menu-navegacion__enlace{
     text-decoration:none;
 }
+

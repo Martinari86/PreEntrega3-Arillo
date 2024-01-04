@@ -10,10 +10,9 @@
     "footer";
     background-color: red;
     gap: 20px
-
 }
 
-#mainPrincipal{
+.mainPrincipal{
     grid-area: main;
     display: flex;
     flex-direction: column;
@@ -30,7 +29,6 @@
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-      
 }
 
 .mainPrincipal__articulo3{
@@ -58,7 +56,6 @@
     height: auto;
     border-radius: 70px;
     padding:20px;
-  
 }
 
 .mainPrincipal-articulo3__div{
@@ -74,14 +71,12 @@
     font-family: 'Lato', sans-serif;
     color:white;
     text-shadow: 4px 2px 9px black;
-  
-    
 }
 
 .mainPrincipal-articulo3__imagen1,
 .mainPrincipal-articulo3__imagen2,
 .mainPrincipal-articulo3__imagen3{
-    width: 50%;
+    width: 75%;
     height: auto;
     border-radius: 25px;
     padding: 10px;

@@ -262,7 +262,7 @@ body {
   gap: 20px;
 }
 
-#mainPrincipal {
+.mainPrincipal {
   grid-area: main;
   display: flex;
   flex-direction: column;
@@ -323,7 +323,7 @@ body {
 .mainPrincipal-articulo3__imagen1,
 .mainPrincipal-articulo3__imagen2,
 .mainPrincipal-articulo3__imagen3 {
-  width: 50%;
+  width: 75%;
   height: auto;
   border-radius: 25px;
   padding: 10px;
