@@ -64,7 +64,7 @@ const imcIdealMax=25;
 
 alert("Bienvenido a OH MY NUTRI");
 do{
-opcion=parseInt(prompt("Seleccione Opción: \n 1) Calculo de IMC (Índice de Masa Corporal) \n 2) Calculo de ICA (Índice Cintura Altura) \n 3) Peso Ideal \n 4) Salir"));
+opcion=parseInt(prompt("Seleccione Opción: \n 1) Cálculo de IMC (Índice de Masa Corporal) \n 2) Cálculo de ICA (Índice Cintura Altura) \n 3) Peso Ideal \n 4) Salir"));
 
     switch (opcion){
         case 1:
