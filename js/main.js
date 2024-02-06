@@ -6,7 +6,7 @@ let opcion;
 //Validación de Peso
 function ingresoPeso(){  
     do{
-        peso=parseInt(prompt("Ingrese Peso: "));
+        peso=parseInt(prompt("Ingrese Peso en Kg: "));
 
     }while(peso<=0);
     console.log(peso);
@@ -17,7 +17,7 @@ function ingresoPeso(){
 //Validación de Altura
 function ingresoAltura(){  
     do{
-    altura=parseInt(prompt("Ingrese Altura en Centimetros: "));
+    altura=parseInt(prompt("Ingrese Altura en Cm: "));
     }while(altura<=0);
     return altura;
 }
@@ -25,7 +25,7 @@ function ingresoAltura(){
 //Validación de Cintura
 function ingresoCintura(){  
     do{
-    cintura=parseFloat(prompt("Ingrese Circunferencia de Cintura en Centimetros: "));
+    cintura=parseFloat(prompt("Ingrese Circunferencia de Cintura en Cm: "));
     }while(cintura<=0);
     return cintura;
 }
@@ -64,21 +64,21 @@ const imcIdealMax=25;
 
 alert("Bienvenido a OH MY NUTRI");
 do{
-opcion=parseInt(prompt("Seleccione Opción: \n 1) Calculo de IMC \n 2) Calculo de ICA \n 3) Peso Ideal \n 4) Salir"));
+opcion=parseInt(prompt("Seleccione Opción: \n 1) Calculo de IMC (Índice de Masa Corporal) \n 2) Calculo de ICA (Índice Cintura Altura) \n 3) Peso Ideal \n 4) Salir"));
 
     switch (opcion){
         case 1:
             peso=ingresoPeso();
             altura=ingresoAltura();
             imc=calculoImc(peso,altura);
-            if(imc<20){
-                alert("El imc es de: " + imc + "\nSe encuentra desnutrido");
+            if(imc>=0 && imc<20){
+                alert("Su IMC es de: " + imc + "\nUsted se encuentra desnutrido");
             } else if(imc>=20 && imc<25){
-                    alert("El imc es de: " + imc + "\nSe encuentra todo normal");
+                    alert("Su IMC es de: " + imc + "\nUsted se encuentra normal");
                     } else if (imc>=25 & imc<30){
-                            alert("El imc es de: " + imc + "\nSe encuentra con sobrepreso");
+                            alert("Su IMC es de: " + imc + "\nUsted se encuentra con sobrepreso");
                             } else {
-                            alert("El imc es de: " + imc + "\nSe encuentra es obeso");       
+                            alert("Su IMC es de: " + imc + "\nUsted se encuentra con obesidad mórbida");       
                             }
             break;
         
@@ -87,9 +87,9 @@ opcion=parseInt(prompt("Seleccione Opción: \n 1) Calculo de IMC \n 2) Calculo d
             altura=ingresoAltura();
             ica=calculoIca(cintura,altura);
             if(ica<=0.5){
-                alert("El ICA es de: " + ica + "\nSe encuentra todo normal");
+                alert("Su ICA es de: " + ica + "\nUsted se encuentra normal");
             }   else{
-                alert("El ICA es de: " + ica + "\nRevisar chequeos más en detalle");   
+                alert("Su ICA es de: " + ica + "\nUsted necesita hacerse chequeos en detalle");   
                 }                
             break;    
 
@@ -97,7 +97,7 @@ opcion=parseInt(prompt("Seleccione Opción: \n 1) Calculo de IMC \n 2) Calculo d
             altura=ingresoAltura();
             pesoMin= calculoPesoIdeal(altura,imcIdealMin);
             pesoMax= calculoPesoIdeal(altura,imcIdealMax); 
-            alert("Su peso ideal esta entre " + pesoMin + " y " + pesoMax);   
+            alert("Su Peso ideal está entre " + pesoMin + " y " + pesoMax);   
             break;   
 
         case 4:
