@@ -72,13 +72,13 @@ opcion=parseInt(prompt("Seleccione Opción: \n 1) Cálculo de IMC (Índice de Ma
             altura=ingresoAltura();
             imc=calculoImc(peso,altura);
             if(imc>=0 && imc<20){
-                alert("Su IMC es de: " + imc + "\nUsted se encuentra desnutrido");
+                alert("Su IMC es de: " + imc + "\nUsted se encuentra Desnutrido");
             } else if(imc>=20 && imc<25){
-                    alert("Su IMC es de: " + imc + "\nUsted se encuentra normal");
+                    alert("Su IMC es de: " + imc + "\nUsted se encuentra Normal");
                     } else if (imc>=25 & imc<30){
-                            alert("Su IMC es de: " + imc + "\nUsted se encuentra con sobrepreso");
+                            alert("Su IMC es de: " + imc + "\nUsted se encuentra con Sobrepreso");
                             } else {
-                            alert("Su IMC es de: " + imc + "\nUsted se encuentra con obesidad mórbida");       
+                            alert("Su IMC es de: " + imc + "\nUsted se encuentra con Obesidad Mórbida");       
                             }
             break;
         
@@ -105,7 +105,7 @@ opcion=parseInt(prompt("Seleccione Opción: \n 1) Cálculo de IMC (Índice de Ma
             break;         
 
         default:
-            alert("Ingreso incorrecto");
+            alert("Ingreso Incorrecto");
             break;    
 
     }
