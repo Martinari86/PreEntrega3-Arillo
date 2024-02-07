@@ -97,7 +97,7 @@ opcion=parseInt(prompt("Seleccione Opción: \n 1) Cálculo de IMC (Índice de Ma
             altura=ingresoAltura();
             pesoMin= calculoPesoIdeal(altura,imcIdealMin);
             pesoMax= calculoPesoIdeal(altura,imcIdealMax); 
-            alert("Su Peso ideal está entre " + pesoMin + " y " + pesoMax);   
+            alert("Su Peso ideal está entre " + pesoMin + "kg y " + pesoMax +"kg");   
             break;   
 
         case 4:
