@@ -37,6 +37,7 @@ let verifUsuario=undefined;
 let verifContrasena=""
 
 //Generación de Array e Instanciamiento de Objetos
+//Hay un usuario DUMMY creado Es "usuario: Usuario" "contraseña:1234"
 users.push(new Usuarios("Usuario", "Usuario", 0, 0, "Usuario", "1234"));
 users.push(new Usuarios("Juan", "Martinez", 35, 36521458, "JuanMa", "ingreso.01"));
 users.push(new Usuarios("Martin", "Fernandez", 45, 24589789, "MartinFe", "verano.2024"));
@@ -126,7 +127,7 @@ opcion="";
         case "1":
             //Validación de dato ingresado. No importa como lo escriba el usuario, el servicio ingresado entra en una funcion que devuelve la palabra con la primera letra en mayuscula y el resto en minuscula. El servicio ingresado debe ser exacto
             do{
-            servicio=prompt("Servicios Disponibles:\n- General\n- Desnutricion\n- Deportiva\n- Diabeticos\n- Obesidad\nIngrese Servicio: ");
+            servicio=prompt("Servicios Disponibles:\n- General\n- Desnutricion\n- Deportiva\n- Diabeticos\n- Obesidad\n\nIngrese Servicio: ");
             //console.log(servicio);
             servicio=formatoPalabra(servicio);
             //console.log(servicio);
@@ -145,7 +146,7 @@ opcion="";
         case "2":
             //Validación de dato ingresado. No importa como lo escriba el usuario, el prestador ingresado entra en una funcion que devuelve la palabra con la primera letra en mayuscula y el resto en minuscula. El prestado ingresado debe ser exacto
             do{
-                prestador=prompt("Prestadores Disponibles:\n- Gomez\n- Martinez\n- Rodriguez\nIngrese Prestador: ");
+                prestador=prompt("Prestadores Disponibles:\n- Gomez\n- Martinez\n- Rodriguez\n\nIngrese Prestador: ");
                 prestador=formatoPalabra(prestador);
             }while(prestador!="Rodriguez" && prestador!="Martinez" && prestador!="Gomez")
             
@@ -161,7 +162,7 @@ opcion="";
         case "3":
             //IDEM case "1"
             do{
-                servicio=prompt("Servicios Disponibles:\n- General\n- Desnutricion\n- Deportiva\n- Diabeticos\n- Obesidad\nIngrese Servicio: ");
+                servicio=prompt("Servicios Disponibles:\n- General\n- Desnutricion\n- Deportiva\n- Diabeticos\n- Obesidad\n\nIngrese Servicio: ");
                 //console.log(servicio);
                 servicio=formatoPalabra(servicio);
                 //console.log(servicio);
@@ -169,7 +170,7 @@ opcion="";
             
             //IDEM case "2"
             do{
-                prestador=prompt("Prestadores Disponibles:\n- Gomez\n- Martinez\n- Rodriguez\nIngrese Prestador: ");
+                prestador=prompt("Prestadores Disponibles:\n- Gomez\n- Martinez\n- Rodriguez\n\nIngrese Prestador: ");
                 prestador=formatoPalabra(prestador);
             }while(prestador!="Rodriguez" && prestador!="Martinez" && prestador!="Gomez")    
             
