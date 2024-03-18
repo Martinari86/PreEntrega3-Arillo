@@ -8,10 +8,10 @@
 
 .body{
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 100px 100vh 100px;
+    grid-template-rows: 100px 1000px 100px;
     grid-template-areas: 
     "header" 
     "main" 
@@ -20,11 +20,8 @@
 
 .main{
     grid-area: main;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: antiquewhite;
-    padding: 0px 200px;
+   
+
 }
 
 .header{
@@ -50,6 +47,39 @@ p{
     justify-content: center;
     align-items: center;  
     
+}
+
+div{
+    color: white;
+}
+
+.main__bienvenida{
+    display: block;
+}
+
+.main__ingresoUsuario{
+    display: none;
+}
+
+.main__nuevoUsuario{
+    display: none;
+}
+
+.main__simuladorPeso{
+    display: none;
+}
+
+
+.main__calculoImc{
+    display: none;
+}
+
+.main__calculoIca{
+    display: none;
+}
+
+.main__calculoPesoIdeal{
+    display: none;
 }
 
 
