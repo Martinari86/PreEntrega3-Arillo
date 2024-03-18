@@ -44,8 +44,9 @@
 
 p{
     display: flex;
-    justify-content: center;
-    align-items: center;  
+    justify-content: left;
+    align-items: center;
+    font-size: large;  
     
 }
 
@@ -53,34 +54,94 @@ div{
     color: white;
 }
 
+.textoBienvenida,
+.textoRechazo,
+.texoConfirmacion{
+    color:green;
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+
+/*Estilos de las secciones*/
+
 .main__bienvenida{
-    display: block;
+    visibility: visible;
+    
 }
 
 .main__ingresoUsuario{
-    display: none;
+    visibility: hidden;
+    background-color: blue;
 }
 
 .main__nuevoUsuario{
-    display: none;
+    visibility: hidden;
+    background-color: red;
 }
 
 .main__simuladorPeso{
-    display: none;
+    visibility: hidden;
 }
 
-
 .main__calculoImc{
-    display: none;
+    visibility: hidden;
+    background-color: aquamarine;
 }
 
 .main__calculoIca{
-    display: none;
+    visibility: hidden;
+    background-color: chocolate;
 }
 
 .main__calculoPesoIdeal{
-    display: none;
+    visibility: hidden;
+    background-color: darkkhaki;
 }
+
+/*Estilos de los botones*/
+
+.main__bienvenida__botonUsuario{
+    visibility: visible;
+}
+
+.main__bienvenida__botonNuevoUsuario{
+    visibility: visible;
+}
+
+.main-ingresoUsuario__botonAceptar{
+    visibility: hidden;
+}
+
+.main-nuevoUsuario__botonAceptar{
+    visibility: hidden;
+}
+
+.main-simuladorPeso__botonImc{
+    visibility: hidden;
+}   
+
+.main-simuladorPeso__botonIca{
+    visibility: hidden;
+}
+
+.main-simuladorPeso__botonPesoIdeal{
+    visibility: hidden;
+}
+
+.main-calculoImc__botonAceptar{
+    visibility: hidden;
+}
+
+.main-calculoIca__botonAceptar{
+    visibility: hidden;
+}
+
+.main-calculoPesoIdeal__botonAceptar{
+    visibility: hidden;
+}
+
+
 
 
 
