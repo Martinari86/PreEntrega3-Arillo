@@ -235,6 +235,10 @@ botonAceptarNuevoUsuario.addEventListener("click", ()=>{
         botonUsuario.style.visibility = "visible";
         botonAceptarNuevoUsuario.style.visibility ="hidden";
         users.push(new Usuarios(inputNombre.value, inputApellido.value, 0, 0, inputNuevoUsuario.value, inputNuevoContrasena.value));
+        localStorage.setItem("inputNombre",inputNombre.value);
+        localStorage.setItem("inputApellido",inputApellido.value);
+        localStorage.setItem("inputNuevoUsuario",inputNuevoUsuario.value);
+        localStorage.setItem("inputNuevoContrasena",inputNuevoContrasena.value);
         console.log(users);
         inputNuevoUsuario.value="";
         inputNuevoContrasena.value="";
@@ -274,6 +278,7 @@ botonAceptarImc.addEventListener("click", ()=>{
         mainCalculoImc.style.visibility = "visible";
         botonAceptarImc.style.pointerEvents = "none";
         imc=calculoImc(inputPeso.value,inputAlturaImc.value);
+        sessionStorage.setItem("imc",imc)
         console.log(imc);
         if(imc>=0 && imc<20){
             resultadoIMC.innerText="Su IMC es de: " + imc + "\nUsted se encuentra Desnutrido";
@@ -328,6 +333,7 @@ botonAceptarIca.addEventListener("click", ()=>{
         mainCalculoIca.style.visibility = "visible";
         botonAceptarIca.style.pointerEvents = "none";
         ica=calculoIca(inputCintura.value,inputAlturaIca.value);
+        sessionStorage.setItem("ica",ica)
         console.log(ica);
         if(ica<=0.5){
             resultadoICA.innerText="Su ICA es de: " + ica + "\nUsted se encuentra normal";
@@ -378,7 +384,9 @@ botonAceptarPesoIdeal.addEventListener("click", ()=>{
         mainCalculoPesoIdeal.style.visibility = "visible";
         botonAceptarPesoIdeal.style.pointerEvents = "none";
         pesoMin= calculoPesoIdeal(inputAlturaPesoIdeal.value,imcIdealMin);
+        sessionStorage.setItem("pesoMin",pesoMin)
         pesoMax= calculoPesoIdeal(inputAlturaPesoIdeal.value,imcIdealMax); 
+        sessionStorage.setItem("pesoMax",pesoMax)
         resultadoPesoIdeal.innerText="Su Peso ideal está entre " + pesoMin + "kg y " + pesoMax +"kg";    
         console.log(resultadoIMC);
         inputAlturaPesoIdeal.value=""; 
@@ -410,8 +418,10 @@ botonAceptarPesoIdeal.addEventListener("click", ()=>{
 
 function validacionUsuario(){
     usuarioIngreso=inputUsuario.value;
+    localStorage.setItem("usuarioIngreso",inputUsuario.value)
     console.log(usuarioIngreso);
     usuarioContrasena=inputContrasena.value;
+    localStorage.setItem("usuarioContrasena",inputContrasena.value)
     console.log(usuarioContrasena);
     verifUsuario=users.find((elemento)=>(elemento.usuario===usuarioIngreso && elemento.contrasena===usuarioContrasena))
     console.log(verifUsuario);
