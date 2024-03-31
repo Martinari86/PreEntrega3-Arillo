@@ -6,64 +6,301 @@
     box-sizing: border-box;
 }
 
+/* Estilo Body GENERAL */
 .body{
     width: 100vw;
     height: 100vh;
+    background-color: rgb(243, 243, 243);
     display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 100px 1000px 100px;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 100vh 100px;
     grid-template-areas: 
     "header" 
     "main" 
     "footer";
 }
 
-.main{
-    grid-area: main;
-   
 
-}
-
+/* Estilo Header GENERAL */
 .header{
+    width: 100vw;
     grid-area: header;
     text-align: center;
-    background-color: green;
+    background-color: rgb(243, 243, 243);
     display: flex;
-    justify-content: center;
+    justify-content:left;
     align-items: center;  
+    -webkit-box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 0.75);
 }
 
+.header__nav{
+    display: flex;
+    width: 100vw;
+    padding: 20px;
+    gap: 20px;
+    justify-content:space-around;
+    align-items: flex-start;
+}
+
+/* Estilo Footer GENERAL */
 .footer{
+    width: 100vw;
     grid-area: footer;
     text-align: center;
-    background-color: green;
+    background-color: rgb(243, 243, 243);
     display: flex;
-    justify-content: center;
-    align-items: center;  
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    -webkit-box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 0.75);  
 }
 
-p{
+.footer__texto{
+    color:blue;
+    font-weight:600;
+}
+
+/* Estilo Main GENERAL */
+.main{
+    grid-area: main;
+
+}
+
+/* Estilo Main Index */
+
+.main__bienvenida{
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    justify-content: left;
+    flex-direction: column;
     align-items: center;
-    font-size: large;  
+}
+
+
+.main-bienvenida__texto1{
+    height: 10%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4rem;
+    color: whitesmoke;
+    position: relative;
+    z-index: 100;
+    text-align: left;
+    padding: 10px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;   
+}
+
+.main__contenedor{
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-bienvenida__foto{
+    width: 100%;
+    height: 80%;
+    z-index: 10;
+    position: relative;   
+}
+
+.main-bienvenida__texto2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4rem;
+    color: whitesmoke;
+    display: flex;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;   
+}
+
+
+
+.main__ingresoUsuario{
+    width: 100vw;
+    height: 90vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.main__nuevoUsuario{
+    width: 100vw;
+    height: 90vh;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+
+}
+
+#texto1{
+    padding-left: 5px;
+    display: inline-block;
+    text-align: left;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#texto2{
+    padding-left: 5px;
+    display: none;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#texto3{
+    padding-left: 5px;
+    display: none;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.main__recetasIdeas{
+    height: 100vh;
+}
+
+.main-recetasIdeas-bienvenida__texto{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 6rem;
+    color: whitesmoke;
+    position: absolute;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;  
+}
+
+.main-recetasIdeas-bienvenida__foto{
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    position: absolute; 
+}
+
+/*Estilos Botonera*/
+
+.main__botonera{
+    display: flex;
+    flex-direction: column;
     
 }
 
-div{
-    color: white;
+.div__botonera{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.textoBienvenida,
-.textoRechazo,
-.texoConfirmacion{
-    color:green;
-    font-size: xx-large;
-    font-weight: 600;
+.main__calculo{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding: 20px;
+}
+
+#botonAceptar{
+    display: inline;
+    width: 20%;
+    justify-content: center;
+
+}
+
+#invisibilizar{
+    display:none;
+}
+
+#visibilizar{
+    display:flex;
 }
 
 
-/*Estilos de las secciones*/
+
+
+/* Clases BOOTSTRAP usuarios */
+
+.form-label,
+.form-check-label{
+    color: black;
+}
+
+.form-control{
+    width: 50%;
+    pointer-events:visible;
+}
+
+.col-12{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    gap:15px;
+}
+
+.col-12__div{
+    display: flex;
+    flex-direction: row;
+    gap: 30px
+}
+
+.col-12__a{
+    color: black;
+}
+
+.col_g-3{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.form-label{
+    width:40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos de las secciones
 
 .main__bienvenida{
     visibility: visible;
@@ -100,7 +337,7 @@ div{
 }
 
 /*Estilos de los botones*/
-
+/*
 .main__bienvenida__botonUsuario{
     visibility: visible;
 }
@@ -140,8 +377,4 @@ div{
 .main-calculoPesoIdeal__botonAceptar{
     visibility: hidden;
 }
-
-
-
-
-
+/*
