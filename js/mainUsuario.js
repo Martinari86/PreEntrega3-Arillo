@@ -26,13 +26,13 @@ class Servicios{
 //Declaración e Inicialización de variables
 let usersArray=[];
 let users=[];
-let services=[];
+let arrayTestigo=[];
 let opcion="";
 let turns=0;
 let usuarioIngreso="";
 let verifUsuario=undefined;
-let verifContrasena=""
-
+let verifContrasena="";
+let url="";
 
 //Generación de Array e Instanciamiento de Objetos
 //Hay un usuario DUMMY creado Es "usuario: Usuario" "contraseña:1234"
@@ -69,13 +69,6 @@ usersArray=[
         contrasena:"auto.1980",
     }
 ]
-
-// usersArray.push(new Usuarios("Usuario", "Usuario", "Usuario", "1234"));
-// usersArray.push(new Usuarios("Juan", "Martinez","JuanMa", "ingreso.01"));
-// usersArray.push(new Usuarios("Martin", "Fernandez", "MartinFe", "verano.2024"));
-// usersArray.push(new Usuarios("Facundo", "Urquiza", "FacuUr", "lgalogia123"));
-// usersArray.push(new Usuarios("Manuel", "Perez", "ManuPe", "2024.auto"));
-
 console.log(usersArray);
 
 //Obtener los Botones
@@ -155,6 +148,19 @@ const getUsers = (array)=>{
         },5000)  
     })      
 }
+
+url="https://jsonplaceholder.typicode.com/users"
+fetch(url)
+    .then(respuesta=>respuesta.json())
+    .then(data=>{console.log(data),
+                 arrayTestigo=data
+                 console.log(arrayTestigo);
+                 arrayTestigo.forEach(element => {
+                    usersArray.push(element)   
+                 });
+                 log(usersArray)
+                })
+    .catch(error=>console.log(error));
 
 //Se llama a al ARRAY DE USUARIOS, y ejecuta las acciones en caso favorable, en caso contrario, marca error por consola.
 getUsers(usersArray)
