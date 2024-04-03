@@ -52,6 +52,7 @@ const ingreseCintura = document.createElement("p");
 ingreseCintura.innerText="Ingrese Cintura en cm: "  
 ingreseCintura.id="texto3"
 console.log(ingreseAltura);      
+
 const inputCintura = document.createElement("input");
 inputCintura.type="text";
 inputCintura.className="form-control";
