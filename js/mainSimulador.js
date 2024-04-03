@@ -8,7 +8,6 @@ JS aplicado a la hoja SIMULADOR
 const imcIdealMin=20;
 const imcIdealMax=25;
 
-
 //Obtener los Botones
 let botonImc= document.getElementById("botonImc");
 console.log(botonImc);
@@ -31,7 +30,7 @@ botonAceptarPesoIdeal=botonAceptarPesoIdeal[0];
 //Creación de elementos para llenar la sección
 const ingresePeso = document.createElement("p");
 ingresePeso.innerText="Ingrese Peso en kg: " 
-ingresePeso.id="texto1"
+ingresePeso.id="texto3"
 console.log(ingresePeso);      
 
 const inputPeso = document.createElement("input");
@@ -41,7 +40,7 @@ inputPeso.id="inputPeso";
 
 const ingreseAltura = document.createElement("p");
 ingreseAltura.innerText="Ingrese Altura en cm: ";
-ingreseAltura.id="texto1"
+ingreseAltura.id="texto3"
 console.log(ingreseAltura);   
 
 const inputAltura = document.createElement("input");
@@ -51,7 +50,7 @@ inputAltura.id="inputAltura";
 
 const ingreseCintura = document.createElement("p");
 ingreseCintura.innerText="Ingrese Cintura en cm: "  
-ingreseCintura.id="texto1"
+ingreseCintura.id="texto3"
 console.log(ingreseAltura);      
 const inputCintura = document.createElement("input");
 inputCintura.type="text";
@@ -78,15 +77,9 @@ console.log(maintexto);
 
 
 //Ingreso al simulador. Aparece la sección sólo si el usuario está LOGUEADO
-if(sessionStorage.getItem("ingresoValidado")=="false")
+if(sessionStorage.getItem("ingresoValidado")=="true")
     {
-    mainCalculo.style.visibility="hidden";
-    mainBotonera.style.visibility="hidden";
-    maintexto.innerText="Debe Ingresar al Sitio para usar el Simulador"
-    }
-    else
-    {
-    maintexto.innerText="Bienvenido " + localStorage.getItem("usuarioIngreso") + " al Simulador OH MY NUTRI !!!"
+    maintexto.innerText="Bienvenido al Simulador OH MY NUTRI !!!"
     mainCalculo.style.visibility="visible";
     mainBotonera.style.visibility="visible";
     }    

@@ -29,10 +29,10 @@
                 <a class="nav-link" href="pages/recetasIdeas.html">Recetas e Ideas</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="pages/simulador.html">Simulador</a>
+                  <a class="nav-link" id="simulador" href="pages/simulador.html">Simulador</a>
                 </li> 
                 <li class="nav-item">
-                  <a class="nav-link" style="font-weight: bold" href="pages/usuario.html">Ingresar al Sitio</a>
+                  <a class="nav-link" id="ingresarAlSitio" style="font-weight: bold" href="pages/usuario.html">Ingresar al Sitio</a>
                 </li>
                 <!--  
                 <li class="nav-item">
@@ -66,9 +66,8 @@
     <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
-    <script>
-      sessionStorage.setItem("ingresoValidado","")
-    </script>
+    <!-- Script inicial, si se marco el checkbox de RECORDAR, que evite el inicio de sesión  -->
+    <script src="js/mainIndex.js"></script>
 
 </body>
 </html>

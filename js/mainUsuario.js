@@ -149,6 +149,10 @@ const getUsers = (array)=>{
     })      
 }
 
+//Llama a una API "falsa" de usuarios y la PUSHEO con el array de Usuarios que tengo creado al principio. Luego todo el arreglo se considera para la validacion de usuario
+
+//IMPORTANTE: El API "falso" trae usuario JSON donde los atributos lo llaman de manera diferente, la validación del usuario lo haria con los atributos usuario y contraseña del objeto USUARIOS. A pesar de no tener sentido en la aplicación, es para demostrar el uso de la funcion FETCH.
+
 url="https://jsonplaceholder.typicode.com/users"
 fetch(url)
     .then(respuesta=>respuesta.json())
@@ -156,7 +160,7 @@ fetch(url)
                  arrayTestigo=data
                  console.log(arrayTestigo);
                  arrayTestigo.forEach(element => {
-                    usersArray.push(element)   
+                 usersArray.push(element)   
                  });
                  log(usersArray)
                 })
@@ -180,8 +184,7 @@ getUsers(usersArray)
                 showConfirmButton: false,
                 timer: 1500
             });
-            inputIngresoUsuario.value="";
-            inputIngresoContrasena.value="";
+            sessionStorage.setItem("ingresoValidado",false)
         
         }else{
             //alert("Usuario encontrado")
@@ -197,28 +200,35 @@ getUsers(usersArray)
             textoTitulo3.style.display="none";
             inputIngresoUsuario.style.pointerEvents="none";
             inputIngresoContrasena.style.pointerEvents="none";
-            inputIngresoUsuario.value="";
-            inputIngresoContrasena.value="";
             sessionStorage.setItem("ingresoValidado",true)
         }   
 
-        if(checkIngresar.value="on"){
-            localStorage.setItem("recordar",true)
+        if(checkIngresar.checked==true){
+            localStorage.setItem("recordar",true);
+            localStorage.setItem("usuarioIngreso",inputIngresoUsuario.value);
+            localStorage.setItem("usuarioContrasena",inputIngresoContrasena.value);
+            inputIngresoUsuario.value="";
+            inputIngresoContrasena.value=""
+
         }else{
-            localStorage.setItem("recordar",false)
+            localStorage.setItem("recordar",false),
+            sessionStorage.setItem("usuarioIngreso",inputIngresoUsuario.value);
+            sessionStorage.setItem("usuarioContrasena",inputIngresoContrasena.value);
+            inputIngresoUsuario.value="";
+            inputIngresoContrasena.value=""
         }
             
     }    
     );
     //Acciones al REGISTRAR USUARIO
     botonRegistrar.addEventListener("click",()=>{
-        usersArray.push(new Usuarios(inputRegistroNombre.value,       inputRegistroApellido.value, inputRegistroUsuario.value, inputRegistroContrasena.value));
+        usersArray.push(new Usuarios(inputRegistroNombre.value,inputRegistroApellido.value, inputRegistroUsuario.value, inputRegistroContrasena.value));
         console.log(usersArray);
         console.log(users);
-        localStorage.setItem("inputRegistroNombre",inputRegistroNombre.value);
-        localStorage.setItem("inputRegistroApellido",inputRegistroApellido.value);
-        localStorage.setItem("inputRegistroUsuario",inputRegistroUsuario.value);
-        localStorage.setItem("inputRegistroContrasena",inputRegistroContrasena.value);
+        sessionStorage.setItem("inputRegistroNombre",inputRegistroNombre.value);
+        sessionStorage.setItem("inputRegistroApellido",inputRegistroApellido.value);
+        sessionStorage.setItem("inputRegistroUsuario",inputRegistroUsuario.value);
+        sessionStorage.setItem("inputRegistroContrasena",inputRegistroContrasena.value);
         inputRegistroUsuario.value="";
         inputRegistroContrasena.value="";
         inputRegistroNombre.value="";
@@ -237,6 +247,7 @@ getUsers(usersArray)
         textoTitulo3.style.display="none";
         seccionIngreso.style.display="flex";
         seccionRegistro.style.display="none";
+        sessionStorage.setItem("ingresoValidado",false);
     })    
 })
 .catch((error) => console.log("Hay errores"));
@@ -245,10 +256,8 @@ getUsers(usersArray)
 
 function validacionUsuario(users){
     usuarioIngreso=inputIngresoUsuario.value;
-    localStorage.setItem("usuarioIngreso",inputIngresoUsuario.value)
     console.log(usuarioIngreso);
     usuarioContrasena=inputIngresoContrasena.value;
-    localStorage.setItem("usuarioContrasena",inputIngresoContrasena.value)
     console.log(usuarioContrasena);
     verifUsuario=users.find((elemento)=>(elemento.usuario===usuarioIngreso && elemento.contrasena===usuarioContrasena))
     console.log(verifUsuario);
